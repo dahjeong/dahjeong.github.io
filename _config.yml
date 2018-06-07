@@ -6,30 +6,30 @@ title: "Dajung's Study Note" #블로그 좌측 상단의 제목
 name:"Fundamental Math, Physics, and Aerospace Engineering"
 url:"https://dahjeong.github.io" # 블로그 주소
 repository:"dahjeong/dahjeong/dahjeong.github.io" #블로그 GitHub 리포지토리
-Search: true # 사이트 우측 상단 검색 활성화
-Search_full_content: true # 제목이 아닌 내용까지도 검색할 것인지에 대한 설정 기본 false
+search: true # 사이트 우측 상단 검색 활성화
+search_full_content: true # 제목이 아닌 내용까지도 검색할 것인지에 대한 설정 기본 false
 
-Author:
-Name:"Dajung Kim"
-Avatar:"/img/DajeongKim.jpeg" # 프로필 사진
-Bio:a Ph.D student at HKUST
-Location:"Incheon, Korea"
-Email:"dah.jeong.kim@gmail.com"
-# uri: 웹사이트. 보통 지금 블로그 말고 링크해 두고 싶은 사이트를 적는다. 그러나 나는 없음
-Github:"dahjeong" # 주소 전체를 적는 것이 아닌 자신의 정보만 적는다.
+author:
+name:"Dajung Kim"
+avatar:"/img/DajeongKim.jpeg" # 프로필 사진
+bio:"a Ph.D student at HKUST"
+location:"Incheon, Korea"
+email:"dah.jeong.kim@gmail.com"
+# uri: 웹사이트, 보통 지금 블로그 말고 링크해 두고 싶은 사이트를 적는다. 그러나 나는 없음
+github:"dahjeong" # 주소 전체를 적는 것이 아닌 자신의 정보만 적는다.
 
-Defaults:
+defaults:
 
--scope:
-Path:""
-Type:posts
-Values:
-Layout:single
-author_profile:true
+scope:
+path: ""
+type: posts
+values:
+layout: single
+author_profile: true
 read_time: false
-Comments:true # 댓글 활성화
-Share : true
-Related: true
+comments: true # 댓글 활성화
+share : true
+related: true
 
 auto: true # automatically update your jekyll
 server: true # runs a local server
