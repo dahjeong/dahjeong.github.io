@@ -3,20 +3,20 @@
 #다정 수정(18.06.07)
 locale: "ko" # 타겟 국가 설정
 title: "Dajung's Study Note" #블로그 좌측 상단의 제목
-name:"Fundamental Math, Physics, and Aerospace Engineering"
-url:"https://dahjeong.github.io" # 블로그 주소
-repository:"dahjeong/dahjeong/dahjeong.github.io" #블로그 GitHub 리포지토리
+name: "Fundamental Math, Physics, and Aerospace Engineering"
+url: "https://dahjeong.github.io" # 블로그 주소
+repository: "dahjeong/dahjeong/dahjeong.github.io" #블로그 GitHub 리포지토리
 search: true # 사이트 우측 상단 검색 활성화
 search_full_content: true # 제목이 아닌 내용까지도 검색할 것인지에 대한 설정 기본 false
 
 author:
-name:"Dajung Kim"
-avatar:"/img/DajeongKim.jpeg" # 프로필 사진
-bio:"a Ph.D student at HKUST"
-location:"Incheon, Korea"
-email:"dah.jeong.kim@gmail.com"
+name: "Dajung Kim"
+avatar: "/img/DajeongKim.jpeg" # 프로필 사진
+bio: "a Ph.D student at HKUST"
+location: "Incheon, Korea"
+email: "dah.jeong.kim@gmail.com"
 # uri: 웹사이트, 보통 지금 블로그 말고 링크해 두고 싶은 사이트를 적는다. 그러나 나는 없음
-github:"dahjeong" # 주소 전체를 적는 것이 아닌 자신의 정보만 적는다.
+github: "dahjeong" # 주소 전체를 적는 것이 아닌 자신의 정보만 적는다.
 
 defaults:
 
@@ -28,7 +28,7 @@ layout: single
 author_profile: true
 read_time: false
 comments: true # 댓글 활성화
-share : true
+share: true
 related: true
 
 auto: true # automatically update your jekyll
