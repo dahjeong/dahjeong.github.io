@@ -1,54 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1561.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p5 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p7 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee}
-    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee}
-    span.s1 {font-kerning: none}
-    span.s2 {-webkit-text-stroke: 0px #000000}
-    span.s3 {text-decoration: underline ; font-kerning: none; color: #0000ee}
-    span.s4 {font: 14.0px Times; text-decoration: underline ; font-kerning: none; color: #0000ee}
-    span.s5 {font: 14.0px Times; font-kerning: none; color: #0000ee}
-    span.s6 {font-kerning: none; color: #0000ee}
-    span.s7 {text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
-    span.s8 {text-decoration: underline ; font-kerning: none}
-    span.s9 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    ul.ul1 {list-style-type: disc}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">--- layout: default title: Mainpage ---</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 22.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Dajung's Study Note</b></span></h2>
-<ul class="ul1">
-  <li class="li1"><span class="s2"></span><span class="s1">{% for post in paginator.posts %}</span></li>
-  <li class="li4"><span class="s2"><a href="file:///Users/dajeongkim/Documents/git_blog/%7B%7B%20post.url%20%7D%7D"><span class="s3">{{ post.date | date: "%d %B %Y" }} </span><span class="s4"><b>{{ post.title }}</b></span><span class="s5"><b><br>
-</b></span><span class="s3">{{ post.content |truncatehtml | truncatewords: 30 }}</span><span class="s6"><br>
-</span></a></span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
-</ul>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">{% if paginator.previous_page %}</span></p>
-<p class="p6"><span class="s1">{% if paginator.previous_page == 1 %} <a href="file:///"><span class="s7">Previous</span></a> {% else %} <a href="file:///page%7B%7Bpaginator.previous_page%7D%7D"><span class="s7">Previous</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s1">{% else %} {% endif %}</span></p>
-<ul class="ul1">
-  <li class="li1"><span class="s2"></span><span class="s1">{% if paginator.page == 1 %} {% else %} <a href="file:///"><span class="s7">1</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{% for count in (2..paginator.total_pages) %}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{% if count == paginator.page %} {{count}} {% else %} <a href="file:///page%7B%7Bcount%7D%7D"><span class="s7">{{count}}</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
-</ul>
-<p class="p1"><span class="s1">{% if paginator.next_page %}</span></p>
-<p class="p7"><span class="s8"><a href="file:///page%7B%7Bpaginator.next_page%7D%7D">Next</a></span><span class="s9"><span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s1">{% else %} {% endif %}<span class="Apple-converted-space"> </span></span></p>
-</body>
-</html>
+---
+layout: default
+title: Dajung's Study Note
+---
+<!-- Content
+    ================================================== -->
+  <div class="top-strip"></div>
+  <div class="content">
+    <main class="container">
+    	<div class="row-fluid">
+    		<section class="content">
+    		  <h1>Dajung's Study Note</h1>
+    		</section>
+    		<ul class="entries">
+    		{% for post in paginator.posts %}
+    		  <li>
+    		    <a href="{{ post.url }}">
+                      <span>{{ post.date | date: "%d %B %Y" }}</span>
+    		        <h3>{{ post.title }}</h3>
+                      <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div>
+    		    </a>
+    		  </li>
+    		{% endfor %}
+    		</ul>
+    	</div>
+      <hr>
+      <div id="post-pagination">
+        {% if paginator.previous_page %}
+        <p class="prev">
+          {% if paginator.previous_page == 1 %}
+          <a href="/">Previous</a>
+          {% else %}
+          <a href="/page{{paginator.previous_page}}"> Previous</a>
+          {% endif %}
+        </p>
+        {% else %}
+<!--         <p class="prev disabled">
+          <span>Previous</span>
+        </p> -->
+        {% endif %}
+
+        <ul class="pages">
+          <li class="page">
+            {% if paginator.page == 1 %}
+<!--             <span class="current-page">1</span> -->
+            {% else %}
+            <a href="/">1</a>
+            {% endif %}
+          </li>
+
+          {% for count in (2..paginator.total_pages) %}
+          <li class="page">
+            {% if count == paginator.page %}
+            <span class="current-page">{{count}}</span>
+            {% else %}
+            <a href="/page{{count}}">{{count}}</a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+
+        {% if paginator.next_page %}
+        <p class="next">
+          <a href="/page{{paginator.next_page}}">Next</a>
+        </p>
+        {% else %}
+<!--         <p class="next disabled">
+          <span>Next</span>
+        </p> -->
+        {% endif %}
+      </div>
+
+    </main>
+  </div>
+
