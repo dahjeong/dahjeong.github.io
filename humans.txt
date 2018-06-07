@@ -1,21 +1,21 @@
 /* TEAM */
                             
-Your title: Your name.                        
-Site: email, link to a contact form, etc.                         
+Your title: Dajung Kim.                        
+Site: dah.jeong.kim@gmail.com                         
 Twitter: your Twitter username.                        
-Location: City, Country.
+Location: Incheon, Korea.
 
 
 /* THANKS */
 
 HTML5 Muffin
 This is a Frappuccino Blog
-Name: name or url
+Name: Dajung Kim
 
                             
 /* SITE */
                           
-Last update: YYYY/MM/DD                    
+Last update: 2018/06/07                    
 Standards: HTML5, CSS3,..                   
 Components: Modernizr, jQuery, etc.                            
 Software: Software used for the development
