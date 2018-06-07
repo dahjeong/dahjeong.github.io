@@ -1,10 +1,5 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-auto: true # automatically update your jekyll
-server: true # runs a local server
-paginate: 10 # pagination basted on number of posts
-exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
-
 #다정 수정(18.06.07)
 locale: "ko" # 타겟 국가 설정
 title: "Dajung's Study Note" #블로그 좌측 상단의 제목
@@ -16,7 +11,7 @@ Search_full_content: true # 제목이 아닌 내용까지도 검색할 것인지
 
 Author:
 Name:"Dajung Kim"
-Avatar:"/img/DajeongKim.jpg" # 프로필 사진
+Avatar:"/img/DajeongKim.jpeg" # 프로필 사진
 Bio:a Ph.D student at HKUST
 Location:"Incheon, Korea"
 Email:"dah.jeong.kim@gmail.com"
@@ -35,3 +30,8 @@ read_time: false
 Comments:true # 댓글 활성화
 Share : true
 Related: true
+
+auto: true # automatically update your jekyll
+server: true # runs a local server
+paginate: 10 # pagination basted on number of posts
+exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
