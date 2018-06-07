@@ -31,7 +31,7 @@ comments: true # 댓글 활성화
 share: true
 related: true
 
-auto: true # automatically update your jekyll
-server: true # runs a local server
-paginate: 10 # pagination basted on number of posts
-exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
+# auto: true # automatically update your jekyll
+# server: true # runs a local server
+# paginate: 10 # pagination basted on number of posts
+# exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
