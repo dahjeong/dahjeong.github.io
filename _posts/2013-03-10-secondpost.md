@@ -1,13 +1,32 @@
 ---
 layout: post_page
-title: Cupcake
+title: Ideal Gas law(이상기체법칙)
 ---
 
-Pastry liquorice cotton candy halvah tootsie roll pie gummies chocolate bar. Chocolate biscuit liquorice sugar plum tiramisu. Tiramisu pastry jelly beans tart brownie. Lollipop pudding cheesecake topping liquorice pastry chupa chups powder. Jelly beans gummi bears lollipop. Sweet lemon drops soufflé jujubes pastry wafer wypas gummies. Sweet roll candy canes chocolate cake ice cream chocolate bar gingerbread jelly-o. Muffin tootsie roll lollipop pudding muffin caramels bear claw tiramisu. Cookie topping jelly. Toffee cookie cupcake soufflé. Dragée faworki soufflé. Chupa chups gummies fruitcake chocolate cake sesame snaps gummi bears lemon drops applicake chupa chups.
+보일의 법칙(Boyle)
+(이상)기체의 온도와 양이 일정할 때, 압력과 부피는 반비례한다. 
+=> 압력과 부피의 곱이 항상 일정
 
-Faworki fruitcake chocolate cake icing halvah applicake pudding wafer. Pie soufflé dessert cookie. Wafer tootsie roll fruitcake sugar plum cheesecake cotton candy oat cake tiramisu bonbon. Sugar plum tiramisu dragée chupa chups pie. Wafer sweet roll croissant macaroon. Gummi bears pie carrot cake liquorice danish lemon drops apple pie. Soufflé tootsie roll wafer. Topping bear claw fruitcake tiramisu lollipop. Chocolate cake candy dessert gummies. Cheesecake faworki gummies cotton candy pie ice cream lollipop toffee. Jelly fruitcake caramels. Pie soufflé liquorice tootsie roll biscuit chocolate. Wafer pudding candy canes donut jelly beans pie sugar plum. Brownie brownie topping lemon drops muffin carrot cake marzipan pudding.
+샤를의 법칙(Charles)
+(이상)기체의 압력과 양이 일정할 때, 부피와 온도는 정비례한다.
+=> 절대 온도 0에서 기체 부피 0
 
-Applicake donut candy canes jelly-o. Lemon drops pie chocolate cake danish cotton candy powder sugar plum. Wafer donut bear claw candy canes donut chupa chups sesame snaps. Muffin cake chupa chups. Croissant dessert candy canes gummies croissant jujubes. Cookie jelly jelly beans cake. Donut cotton candy wafer chocolate bar chocolate fruitcake. Tart cotton candy brownie jelly-o pastry. Cake jelly-o tiramisu ice cream sugar plum. Dessert applicake toffee. Croissant dragée apple pie jelly-o tart cake pastry. Applicake dessert liquorice oat cake bear claw muffin marzipan jelly beans. Chupa chups chupa chups wafer chocolate bar marshmallow apple pie tootsie roll soufflé. Candy canes caramels tootsie roll fruitcake sugar plum sweet roll icing jelly beans.
+아보가드로의 법칙(Avogadro)
+(이상)기체의 압력과 온도가 일정할 때, 기체의 몰 수와 부피는 정비례한다. 
 
-Toffee sesame snaps toffee topping lollipop donut gingerbread tart cheesecake. Chocolate bar faworki donut cake jelly chupa chups. Oat cake fruitcake cake applicake brownie toffee sweet. Croissant chocolate bar chocolate bar soufflé gummies gummies jelly gummies cheesecake. Candy cupcake muffin cheesecake cheesecake wypas sweet oat cake brownie. Tiramisu liquorice wypas soufflé bear claw candy canes icing. Donut biscuit pie. Toffee apple pie bear claw chocolate ice cream danish. Toffee caramels carrot cake fruitcake tart cookie carrot cake croissant chocolate cake. Macaroon candy faworki bonbon carrot cake icing. Jelly beans ice cream toffee. Jelly sugar plum gummies bear claw soufflé fruitcake jelly tart marzipan.
-Chupa chups applicake powder macaroon donut cheesecake. Tootsie roll wafer liquorice cake danish chupa chups. Sweet tart jelly beans. Bonbon sweet ice cream gingerbread liquorice. Tiramisu caramels danish. Bear claw biscuit sugar plum. Danish caramels sweet roll candy. Wafer gummies tiramisu ice cream gingerbread wypas. Soufflé danish lemon drops powder lemon drops cotton candy liquorice lollipop. Jelly beans bear claw jelly. Tootsie roll faworki muffin sweet roll soufflé. Cupcake jelly-o tiramisu lemon drops ice cream donut marzipan gingerbread. Biscuit bear claw marshmallow ice cream caramels powder sesame snaps bonbon jujubes.
+아보가드로 수는 1몰에 들어 있는 구성입자 수 = 6.02 * 10^(23) mol^(-1) 
+
+이상기체 상태방정식은 위의 세 법칙을 집대성한 것 
+$$ PV = n * R * T $$
+
+P : 압력 (Pressure)
+V : 부피 (Volume)
+n : 몰수 (Mole)
+R : 이상기체 상수 (Ideal gas constant)
+T : 온도(Temperature)
+
+이상기체란 무엇인가?
+기체 분자들이 자신의 크기보다 훨씬 큰 거리를 두고 멀리 떨어져 있다. 기체 입자의 부피는 0으로 간주한다.
+기체 분자들은 끊임없이 무질서하게 움직인다.
+기체 분자들은 충돌할 때를 제외하고 아무런 힘이 작용하지 않으며 일정한 속도의 직선운 동을 한다.
+기체 분자와 벽면과의 충돌은 완전 탄성 충돌이며, 충돌로 인한 에너지 손실이 일어나지 않는다. 
