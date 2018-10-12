@@ -57,3 +57,8 @@ $t_f$ : 비행 종료 시간
 $$
 Range  = V t_f = V \times \frac{L}{D} \times I_{sp} \times \ln \left(\frac{W_i}{W_f}\right)
 $$
+
+
+   {% if page.comments != false %}
+   {% include disqus_comments.html %}
+   {% endif %}

@@ -11,4 +11,3 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
    {% if page.comments != false %}
    {% include disqus_comments.html %}
    {% endif %}
-	<p> Laying down some code with markdown</p>
