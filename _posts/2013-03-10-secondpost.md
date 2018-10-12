@@ -1,6 +1,7 @@
 ---
 layout: post_page
 title: Ideal Gas law(이상기체법칙)
+comment: true
 ---
 
 ## 보일의 법칙(Boyle)

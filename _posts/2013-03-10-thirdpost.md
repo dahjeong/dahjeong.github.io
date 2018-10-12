@@ -1,6 +1,7 @@
 ---
 layout: post_page
 title: Breguet range equation
+comment: true
 ---
 
 Breguet range equation은 비행기가 얼마나 멀리 날 수 있는가를 나타내는 방정식이다.
