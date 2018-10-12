@@ -18,7 +18,10 @@ comment: true
 아보가드로 수는 1몰에 들어 있는 구성입자 수 $$ = 6.02 * 10\^{23} mol\^{-1} $$
 
 이상기체 상태방정식은 위의 세 법칙을 집대성한 것 
-$$ PV = n * R * T $$
+
+$$ 
+\displaystyle PV = n * R * T 
+$$
 
 P : 압력 (Pressure)<br>
 V : 부피 (Volume)<br>
