@@ -53,7 +53,7 @@ $$
 $$t_\textrm{initial}$$ : 비행 시작 시간, $$t_\textrm{initial}=0$$<br>
 $$t_f$$ : 비행 종료 시간
 
-비행 영역(Flight Range)은 항공기 속도($V$)와 시간($t$)의 곱이므로 
+비행 영역(Flight Range)은 항공기 속도($$V$$)와 시간($$t$$)의 곱이므로 
 
 $$
 Range  = V t_f = V \times \frac{L}{D} \times I_{sp} \times \ln \left(\frac{W_i}{W_f}\right)
