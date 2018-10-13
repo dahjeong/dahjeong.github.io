@@ -59,7 +59,7 @@ $$
 Range  = V t_f = V \times \frac{L}{D} \times I_{sp} \times \ln \left(\frac{W_i}{W_f}\right)
 $$
 
-
+   {% page.comments = true %}
    {% if page.comments != false %}
    {% include disqus_comments.html %}
    {% endif %}
