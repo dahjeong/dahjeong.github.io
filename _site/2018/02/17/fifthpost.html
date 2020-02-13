@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Aircraft Design <br> (Estimating preliminary design parameters) <br> 항공기 설계 (설계 파라미터 추정) <br>  - Dajung's Notes</title>
+		<!-- For responsive site
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="author" href="/humans.txt">
+		<meta name="description" content="Description Goes Here">
+		<link rel="stylesheet" href="/css/style.css">
+		<!--[if IE 7]>
+			<html class="ie7"> 
+			<link rel="stylesheet" type="text/css" href="/css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if IE 8]><html class="ie8"> <![endif]-->		
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="ico/favicon.png">	    
+	</head>
+	<body>
+	<!-- Header
+	    ================================================== -->
+	<header>
+
+	</header>
+
+	<div class="top-strip"></div>
+<main class="content">
+    <section class="container">
+    	<div class="row-fluid">
+    		<article class="home-icon">
+				<a href="/">
+					<i class="icon-home"></i> 
+				</a>
+			</article>
+			<article class="post">
+				<h5>17 February 2018</h5>
+				<h3 class="content">Aircraft Design <br> (Estimating preliminary design parameters) <br> 항공기 설계 (설계 파라미터 추정) <br></h3>
+				<section>
+					<ol>
+  <li>설계 이륙 총 중량 예측</li>
+</ol>
+
+<p>(1) 최대양항비 (Maximum Lift and Drag ratio) 추정</p>
+
+<p>유사항공기의 표피 면적비를 그래프를 이용하여 표피 면적비를 구함.</p>
+
+<p><script type="math/tex">\frac{S_{wet}}{S_{ref}}</script>
+<script type="math/tex">S_{wet}</script>: 항공기 표피 면적비 (공기와 접촉하고 있는 면적 전체)
+<script type="math/tex">S_{ref}</script>: 항공기 날개 면적 (항공기 위에서 projection 했을 때 면적)</p>
+
+<p>가로세로비(A)를 특정 값으로 결정하면 표피 면적 가로세로비를 구함.</p>
+
+<script type="math/tex; mode=display">A_{wet} = A/(S_{wet}/{S_{ref})</script>
+
+<p>그림에서 최대 양항비(<script type="math/tex">(\frac{L}{D})_{max}</script>)를 추정.</p>
+
+<p>(2) 연료중량비 (Fuel and Weight ratio) 추정</p>
+<ul>
+  <li>
+    <p>STTO(Start, Taxi, and Take-off)
+<script type="math/tex">W_{1}/W_{0} = 0.97</script></p>
+  </li>
+  <li>
+    <p>상승(Climb)
+<script type="math/tex">W_{2}/W_{1} = 0.985</script></p>
+  </li>
+  <li>
+    <p>순항(Cluise)
+순항거리(R)와 순항속도(V) 가 주어짐.
+비연료소모율은
+<script type="math/tex">C=C_{bhp} \frac{V}{550 \nu_{p}}</script>
+표로 부터 순항상태의 엔진 비연료 소모율(<script type="math/tex">C_{bhp}:lb(hr-bhp)</script>)를 구함.
+프로펠러 항공기의 최적 순항 시의 양항비는 <script type="math/tex">(L/D)_{cruise} = (L/D)_{max}</script> 이고 제트 항공기의 경우 최적 순항 시의 양항비는 <script type="math/tex">(L/D)_{cruise} = 0.866(L/D)_{max}</script>
+이를 Breguet range equation에 대입하면 중량비를 추정할 수 있음.
+<script type="math/tex">W_{3}/W_{2}=e^{-\frac{RC}{V(L/D)}}</script></p>
+  </li>
+  <li>
+    <p>로이터(Loiter)
+로이터 시간(E)이 주어짐.
+표로 부터 로이터 시의 엔진 비연료 소모율(<script type="math/tex">C_{bhp}:lb(hr-bhp)</script>)를 구하고 위의 식을 이용하여 비연료소모율을 구함.
+제트 항공기의 로이터시 최적 양항비는 <script type="math/tex">(L/D)_{cruise} = (L/D)_{max}</script> 임.
+<script type="math/tex">W_{4}/W_{3} = e^{-\frac{EC}{L/D}}</script></p>
+  </li>
+  <li>
+    <p>하강(Decent)
+하강 시에는 연료소모가 매우 적다고 가정함.
+<script type="math/tex">W_{5}/W_{4} = 1</script></p>
+  </li>
+  <li>
+    <p>착륙(Land)
+<script type="math/tex">W_{6}/W_{5} = 0.995</script></p>
+  </li>
+  <li>
+    <p>Reserve
+reserve 조건이 속도(V)와 지속 시간(t)으로 주어짐.
+reserve 거리는
+<script type="math/tex">R = Vt</script> 
+양항비, 비연료소무율은 순항과 같은 값을 사용함. 
+<script type="math/tex">W_{7}/W_{6}=e^{-\frac{RC}{V(L/D)}}</script></p>
+  </li>
+</ul>
+
+<p>최종 연료중량비는 예비연료비 5% 또는 10%와 갇힌 연료 1%를 더하여 계산함.
+<script type="math/tex">W_{f}/W_{0} = 1.06\(1-\frac{W_{7}}{W_{0}}\)</script></p>
+
+<p>(3) 공허중량비 (Empty weight ratio, <script type="math/tex">W_{e}</script>) 추정
+표로 부터 regression 계수를 찾아 아래 식에 대입함.
+<script type="math/tex">W_{e}/W_{0} = AW_{0}^{C}K_{vs}</script>
+여기서 
+<script type="math/tex">K_{vs} =</script>variable sweep constant
+        = 1.04 if variable sweep
+        = 1.00 if fixed sweep</p>
+
+<p>(4) 설계 이륙총중량 (Design takeoff gross weight, <script type="math/tex">W_{0}</script>) 추정.
+승무원 하중(<script type="math/tex">W_{crew}</script>), 유상하중(<script type="math/tex">W_{payload}</script>)이 주어지면 아래의 식을 반복 계산하여 설계 이륙총중량(<script type="math/tex">W_{0}</script>)을 찾음.
+<script type="math/tex">W_{0}=\frac{W_{crew}+W_{payload}}{1-(W_{f}/W_{0})-(W_{e}/W_{0})}</script></p>
+
+<ol>
+  <li>양항곡선 추정
+(1) 표피면적(<script type="math/tex">S_{wet}</script>)
+항공기의 설계 이륙총중량으로부터 항공기 표피면적을 구함.
+<script type="math/tex">log_{10}S_{wet}=c+dlog_{10}W_{0}</script>
+여기서 계수 c와 d는 regression 계수이며 항공기 종류에 따라 아래의 표과 같이 결정됨.</li>
+</ol>
+
+<p>(2) 등가유해면적(equivalent parasite area, f)
+등가표면마찰계수(equivalent skin friction coefficient, <script type="math/tex">c_{f}</script>)를 가정하면 상관 계수 a, b와 항공기 표피면적(<script type="math/tex">S_{wet}</script>)을 이용하여 등가유해면적을 구함. <script type="math/tex">c_{f}</script>가 작을 수록 항공기의 표면이 매끄럽게 제작된 것을 의미함. 
+<script type="math/tex">log_{10}f=a+blog_{10}S_{wet}</script></p>
+
+<p>(3) 날개면적(<script type="math/tex">S_{ref}</script>)
+<script type="math/tex">W_{0}/S_{ref}</script> 를 특정값으로 가정하고 앞에서 구한 설계 이륙총중량(<script type="math/tex">W_{0}</script>)을 이용하여 날개면적(<script type="math/tex">S_{ref}</script>)을 구함.</p>
+
+<p>(4) 최소항력계수(<script type="math/tex">C_{D_{0}}</script>)
+최소항력계수는 점성에 의한 표면마찰과 관계있으며 아래의 식을 통해 구함.
+<script type="math/tex">C_{D_{0}}=\frac{f}{S_{ref}}</script></p>
+
+<p>(5) 항력(<script type="math/tex">C_{D}</script>)
+항공기의 항력은 최소항력계수와 양력에 의한 유도항력의 합으로 구할 수 있음.
+<script type="math/tex">C_{D}=C_{D_{0}}+KC_{L}^{2}</script>
+여기서 
+<script type="math/tex">K=\frac{1}{\pi Ae}</script>
+이때 e는 Oswald span efficiency로 타원형 양력분포의 날개는 e=1 임. 일반적으로 0.7에서 0.85의 값을 갖음.
+아음속 날개의 경우:
+<script type="math/tex">e=1.78(1-0.045A^{0.68})-0.64</script>
+앞전 후퇴각이 30도보다 큰 날개의 경우:
+<script type="math/tex">e=4.61(1-0.045A^{0.68})(cos\Lambda_{LE})^{0.15}-3.1</script></p>
+
+<ol>
+  <li>기능성능 요구도
+(1) 최대속도
+특정고도에서 이용 추력(available thrust)을 T라고 할 때, 항공기의 최대속도는 이용 추력이 항력보다 클 때 발생하므로 아래와 같은 식을 만족해야 함.</li>
+</ol>
+
+<script type="math/tex; mode=display">(\frac{T_{altitude}}{W_{remained}}) \geq \frac{C_{D_{0}}q}{W_{remained}/S}+\frac{K}{q} \frac{W_{remained}}{S}</script>
+
+<p>피스톤엔진과 프로펠러 항공기 추력 특성은
+<script type="math/tex">T_{SL}=550hp_{SL} \frac{nu_{p}}{V}</script></p>
+
+<p>high bypass 터보팬엔진의 경우 고도에 따른 추력을 보정해 주어야 함.
+<script type="math/tex">T_{altitude}=\frac{0.1}{M_{\inf}}\sigma T_{SL} = \frac{a\sigma}{10V}T_{SL}</script></p>
+
+<p>연료사용에 따른 중량도 보정해 주어야 함.
+<script type="math/tex">W_{remained} = \frac{W_{remained}}{W_{0}}W_{0}</script></p>
+
+<p>(2) 상승률
+항공기의 비행경로각이 작을 경우 상승률은
+<script type="math/tex">R/C = V \(\frac{T}{W}-\frac{D}{W}\) = V \{\frac{T}{W}-\frac{qC_{D_{0}}}{(W/S)}-\frac{K}{q}\(\frac{W}{S}\)\}</script></p>
+
+<p>피스톤엔진과 프로펠러 항공기의 추력 특성과 중량 보정을 포함하면
+<script type="math/tex">R/C = 550\nu_{p}\(\frac{hp_{SL}}{W_{0}}\)-\frac{1}{2}\rho V^{3} \frac{C_{D_{0}}}{(W_{0}/S)}-\frac{2K}{\rho V}\(\frac{W_{0}}{S}\)</script></p>
+
+<p>최대상승률이 발생하는 속도는 R/C를 속도로 미분하여 얻을 수 있음.
+<script type="math/tex">V=\sqrt{\frac{2}{\rho}\(\frac{W_{0}}{S}\)\sqrt{\frac{K}{3C_{D_{0}}}}}</script></p>
+
+<p>high bypass 터보팬엔진 항공기의 추력 특성과 중량 보정을 포함하면
+<script type="math/tex">R/C = V \{ \(\frac{W_{0}}{W_{remained}}\)\frac{a\sigma}{10V}\(\frac{T_{SL}}{W_{0}}\)-\(\frac{W_{0}}{w_{remained}}\)\frac{qC_{D_{0}}}{(W_{0}/S)}-\frac{K}{q}\\(\frac{W_{remained}}{W_{0}}\)(\frac{W_{0}}{S}\)\}</script></p>
+
+<p>최대상승률이 발생하는 속도는
+<script type="math/tex">V = \sqrt{\frac{2}{\rho}\(\frac{W_{remained}}{W_{0}}\)\(\frac{W_{0}}{S}\)\sqrt{\frac{K}{3C_{D_{0}}}}}</script></p>
+
+<p>(3) 상승한계
+표에서 항공기 타입에 따른 최대 상승률(R/C)을 찾고 상승 한계에 적용함.
+피스톤엔진과 프로펠러 항공기의 상승한계는
+<script type="math/tex">\(\frac{hp_{SL}}{W_{0}}\) \geq \frac{\rho C_{D_{0}}}{1100 \nu} \(\frac{V^{3}}{W_{0}/S}\)+\(\frac{K}{275 \nu_{p}}\)\frac{1}{V}\(\frac{W_{0}}{S}\)+\frac{R/C}{550 \nu_{p}}</script></p>
+
+<p>high bypass 터보팬엔진 항공기의 상승한계는 
+<script type="math/tex">\(\frac{T_{SL}}{W_{0}}\) \geq \frac{r\rho C_{D_{0}}}{a \sigma} \frac{V^{3}}{(W_{0}/S)}+\(\frac{W_{remained}}{W_{0}}\)^{2} \(\frac{a \sigma K}{5\rho}\) \frac{1}{V} \(\frac{W_{0}}{S}\)</script></p>
+
+<ol>
+  <li>활주성능 요구도
+(1) 이륙거리
+이륙거리는 지상활주거리(Ground roll)는 정지상태에서 가속하여 속도가 이륙속도(통상 실속속도의 1.1배)에 이르렀을 때, 즉 바퀴가 지면을 떠날 때까지의 활주거리임.</li>
+</ol>
+
+<p>제트 항공기의 경우
+<script type="math/tex">\(\frac{W_{0}}{S} \leq (TOP)\sigma \C_{L_{TO}}\(frac{T_{SL}}{W_{0}}\)\)</script></p>
+
+<p>프로펠러 항공기의 경우
+<script type="math/tex">\(\frac{W_{0}}{S} \leq (TOP)\sigma \C_{L_{TO}}\(frac{hp_{SL}}{W_{0}}\)\)</script></p>
+
+<p>(2) 착륙거리
+착륙거리는 지상활주거리와 장애물 통과거리의 합임.
+<script type="math/tex">\(\frac{W_{0}}{S} \leq frac{S_{landing}-S_{a}}{80} \sigma C_{L_{max}} \frac{W_{0}}{W_{remained}}</script></p>
+
+<p>여기서 첫 항은 지상활주거리이며 바퀴가 접지하여 정지할 때까지의 거리를 의미함.</p>
+
+<p><script type="math/tex">S_{a}</script>은 장애물 통과거리이며 항공기 고도 50ft에서부터 바퀴가 접지할 때까지의 거리를 의미함.
+<script type="math/tex">S_{a}</script> = 1,000(여객기 등급, 여기서 활공각은 3도)
+            = 600(경항공기, Power-off Approach)
+            = 450(단거리 이착륙기, 활공각은 7도)</p>
+
+<p>(3) 실속속도
+실속속도는 항공기가 최대양력계수 상태에서 등속수평비행하는 속도임.
+FAR23 규정에 따르면 총 이륙중량 12,500lb 이하의 항공기는 특별한 경우(다발엔진을 채택하거나 특별한 상승률을 요구하는 경우)가 아니면 실속속도가 61knots를 넘어서는 안됨. 
+실속속도의 정의와 내부연료 70%를 고려하면 실속속도는 
+<script type="math/tex">\(\frac{W_{0}}{S}\) \leq \frac{1}{2} \rho V_{stall}^{2}C_{L_{max}} \frac{W_{0}}{W_{70%}}</script></p>
+
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = 'http://localhost:4000/2018/02/17/fifthpost.html';
+this.page.identifier = 'http://localhost:4000/2018/02/17/fifthpost.html';
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://dahjeong-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+					<hr>
+				</section>
+				<section style="font-weight:bold; margin-bottom: 2em;">
+					 
+							<a rel="prev" class="a-hover"href="/2018/02/16/fourthpost.html"><i class="icon-double-angle-left"></i> Halton Sequence</a>
+						
+						
+				</section>
+			</article>
+		</div>
+	</section>
+</main>
+
+
+	<footer>
+		<div class="container">
+			<a href="http://dahjeong.github.io/">Dajung's Notes</a> | Copyright Dajung Kim
+		</div>
+	</footer>
+
+	<!-- Footer
+	    ================================================== -->
+
+	<!-- Javascripts 
+	    ================================================= -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/custom.js"></script>
+	<script type="text/javascript" async
+	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+    <!-- Analytics
+    ================================================== -->
+    <script>
+		// analytics code
+    </script>	
+	</body>
+</html>
