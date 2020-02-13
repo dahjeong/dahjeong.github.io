@@ -165,3 +165,5 @@ comment: true
         FAR23 규정에 따르면 총 이륙중량 12,500lb 이하의 항공기는 특별한 경우(다발엔진을 채택하거나 특별한 상승률을 요구하는 경우)가 아니면 실속속도가 61knots를 넘어서는 안됨. 
         실속속도의 정의와 내부연료 70%를 고려하면 실속속도는 
         $$\(\frac{W_{0}}{S}\) \leq \frac{1}{2} \rho V_{stall}^{2}C_{L_{max}} \frac{W_{0}}{W_{70%}}$$
+
+{% page.comments = true %} {% if page.comments != false %} {% include disqus_comments.html %} {% endif %}

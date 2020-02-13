@@ -34,3 +34,5 @@ T : 온도(Temperature)<br>
 기체 분자들은 끊임없이 무질서하게 움직인다.<br>
 기체 분자들은 충돌할 때를 제외하고 아무런 힘이 작용하지 않으며 일정한 속도의 직선운 동을 한다.<br>
 기체 분자와 벽면과의 충돌은 완전 탄성 충돌이며, 충돌로 인한 에너지 손실이 일어나지 않는다.<br> 
+
+{% page.comments = true %} {% if page.comments != false %} {% include disqus_comments.html %} {% endif %}

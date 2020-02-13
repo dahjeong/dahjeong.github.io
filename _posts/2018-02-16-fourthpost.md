@@ -5,3 +5,5 @@ comment: true
 ---
 
 Sampling plan 결정하는 방법 중에 하나이다. 
+
+{% page.comments = true %} {% if page.comments != false %} {% include disqus_comments.html %} {% endif %}

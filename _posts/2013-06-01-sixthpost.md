@@ -47,3 +47,5 @@ $$D=0.288T^{0.5}e^{(0.04BPR)}$$
 $$SFC_{maxT}=2.1e^{(-0.12BPR)}$$
 $$T_{cruise}=1.6T^{0.74}e^{(0.023BPR)}$$
 $$SFC_{cruise}=1.04e^{-(0.186BPR)}$$
+
+{% page.comments = true %} {% if page.comments != false %} {% include disqus_comments.html %} {% endif %}
