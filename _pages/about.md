@@ -1,15 +1,26 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "Dajung Kim"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+학부 때 항공우주공학과 전자공학을 복수전공했습니다. 항공우주공학과에서 석사를 마치고 항공기 만드는 국가연구소에서 연구원으로 2년간 일했습니다. 이후에 배 만드는 회사로 이직해서 4년 반동안 선박 조종, 운동시뮬레이션, 운항지원시스템에 대한 연구를 했습니다. 지금은 항공우주공학과에서 박사과정 중에 있습니다.
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+프로그래밍 하는 것도 좋아하고 실험하는 것도 좋아합니다. 근데 사실, 이론 공부하는 걸 더 좋아합니다. 특히 물리(物理: 사물의 이치)학을 좋아하고 수학은 잘 못하지만 좋아는 합니다.
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
+만화책 보는 걸 즐기고, 활자 중독자처럼 책을 보고, 영화 보는거, (요즘은 팟캐스트로 바꼈지만) 라디오 듣는거 좋아하고 미술 작품 보는 거, 콘서트 가는 것도 좋아합니다. 그리고 내가 좋아하는 이 모든 것들에 대한 내 생각을 적어두는 것도 좋아합니다.
 
-Thanks for reading!
+5~6살때부터 피아노를 치기 시작해서 지금까지 취미로 피아노를 치지만 잘 못합니다. 중학교 3학년 때 엄마 몰래 수학 학원비로 드럼 학원을 다녔습니다. 고등학교 때부터 대학교 1학년까지 밴드부 드러머였는데 이것도 지금은 잘 못 합니다. 
+ 
+초등학교 때 엄마/여동생이랑 같이 간 태국 여행을 시작으로 해서 현재까지 26개국 정도를 여행했고, 지금은 1년 반째 홍콩에 살고 있습니다. 
+
+인생에 특별한 계획이 없고 그냥... 그때 그때, 내가 하고 싶은 거 하고 살고 싶습니다.
+
+##이거 왜 하냐구요?
+
+사람 만나는 걸 별로 안 좋아해서 맨날 방에 쳐 박혀 있다 보니 심심해서요.
+
+기억을 잘 못해서 배운 것들을 계속 까먹습니다. 여기에 정리해 두고 필요할 때마다 쉽게 찾아 보고 싶고 공부하는데 동기부여도 될 것 같아서요.
+
+항공우주공학은 뭘 공부하고 싶어도 한국어로 된 자료가 많이 없습니다. 여기에 쓰는 것들이 항공공학도를 꿈꾸는 누군가에게 도움이 되길 바라겠습니다.
