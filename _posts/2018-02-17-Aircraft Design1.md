@@ -6,17 +6,16 @@ author: "Dajung Kim"
 comments: true
 ---
 
-1. 설계 이륙 총 중량 예측
+### 1. 설계 이륙 총 중량 예측
    
 1-1. 최대양항비 (Maximum Lift and Drag ratio) 추정
 
 유사항공기의 표피 면적비를 그래프를 이용하여 표피 면적비를 구함.
 
-$$
-\frac{S_{wet}}{S_{ref}} 
-$$
+$$\frac{S_{wet}}{S_{ref}}$$
 
 $$S_{wet}$$: 항공기 표피 면적비 (공기와 접촉하고 있는 면적 전체)
+
 $$S_{ref}$$: 항공기 날개 면적 (항공기 위에서 projection 했을 때 면적)
 
 가로세로비(A)를 특정 값으로 결정하면 표피 면적 가로세로비를 구함.
@@ -25,7 +24,7 @@ $$
 A_{wet} = A/(S_{wet}/S_{ref})
 $$
 
-그림에서 최대 양항비($$(\frac{L}{D})_{max}$$)를 추정.
+그림에서 최대 양항비$$ \left( (\frac{L}{D})_{max} \right) $$를 추정.
 
 1-2. 연료중량비 (Fuel and Weight ratio) 추정
 - STTO(Start, Taxi, and Take-off)
@@ -35,12 +34,15 @@ W_{1}/W_{0} = 0.97
 $$
 
 - 상승(Climb)
+
 $$
 W_{2}/W_{1} = 0.985
 $$
 
 - 순항(Cluise)
+
 순항거리(R)와 순항속도(V) 가 주어짐.
+
 비연료소모율은
 
 $$
@@ -79,6 +81,7 @@ W_{4}/W_{3} = e^{-\frac{EC}{L/D}}
 $$
 
 - 하강(Decent)
+
 하강 시에는 연료소모가 매우 적다고 가정함.
 
 $$
@@ -92,7 +95,9 @@ W_{6}/W_{5} = 0.995
 $$
 
 - Reserve
+  
 reserve 조건이 속도(V)와 지속 시간(t)으로 주어짐.
+
 reserve 거리는
 
 $$
@@ -121,10 +126,8 @@ $$
 
 여기서 
 $$
-K_{vs} = $$ variable sweep constant
-
-        = 1.04 if variable sweep
-
+K_{vs} = $$ variable sweep constant<br>
+        = 1.04 if variable sweep<br>
         = 1.00 if fixed sweep
 
 1-4. 설계 이륙총중량 (Design takeoff gross weight, $$W_{0}$$) 추정.
@@ -135,7 +138,7 @@ $$
 W_{0}=\frac{W_{crew}+W_{payload}}{1-(W_{f}/W_{0})-(W_{e}/W_{0})}
 $$
 
-2. 양항곡선 추정
+### 2. 양항곡선 추정
 
 2-1. 표피면적($$S_{wet}$$)
 
@@ -149,7 +152,9 @@ $$
 
 2-2. 등가유해면적(equivalent parasite area, f)
 
-등가표면마찰계수(equivalent skin friction coefficient, $$c_{f}$$)를 가정하면 상관 계수 a, b와 항공기 표피면적($$S_{wet}$$)을 이용하여 등가유해면적을 구함. $$c_{f}$$가 작을 수록 항공기의 표면이 매끄럽게 제작된 것을 의미함. 
+등가표면마찰계수(equivalent skin friction coefficient, $$c_{f}$$)를 가정하면 상관 계수 a, b와 항공기 표피면적($$S_{wet}$$)을 이용하여 등가유해면적을 구함. 
+
+$$c_{f}$$가 작을 수록 항공기의 표면이 매끄럽게 제작된 것을 의미함. 
 
 $$
 log_{10}f=a+blog_{10}S_{wet}
@@ -196,7 +201,7 @@ $$
 e=4.61(1-0.045A^{0.68})(cos\Lambda_{LE})^{0.15}-3.1
 $$
 
-3. 기능성능 요구도
+### 3. 기능성능 요구도
 
 3-1. 최대속도
 
@@ -273,7 +278,7 @@ $$
 \left( \frac{T_{SL}}{W_{0}} \right) \geq \frac{r\rho C_{D_{0}}}{a \sigma} \frac{V^{3}}{(W_{0}/S)}+\left( \frac{W_{remained}}{W_{0}} \right)^{2} \left( \frac{a \sigma K}{5\rho} \right) \frac{1}{V} \left( \frac{W_{0}}{S} \right)
 $$
 
-4. 활주성능 요구도
+### 4. 활주성능 요구도
 
 4-1. 이륙거리
 
@@ -303,10 +308,8 @@ $$
 
 $$S_{a}$$은 장애물 통과거리이며 항공기 고도 50ft에서부터 바퀴가 접지할 때까지의 거리를 의미함.
 
-$$S_{a}$$ = 1,000(여객기 등급, 여기서 활공각은 3도)
-
-            = 600(경항공기, Power-off Approach)
-
+$$S_{a}$$ = 1,000(여객기 등급, 여기서 활공각은 3도)<br>
+            = 600(경항공기, Power-off Approach)<br>
             = 450(단거리 이착륙기, 활공각은 7도)
 
 4-3. 실속속도
