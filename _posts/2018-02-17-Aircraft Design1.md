@@ -275,28 +275,28 @@ $$
 
 4. 활주성능 요구도
 
-4.1 이륙거리
+4-1. 이륙거리
 
 이륙거리는 지상활주거리(Ground roll)는 정지상태에서 가속하여 속도가 이륙속도(통상 실속속도의 1.1배)에 이르렀을 때, 즉 바퀴가 지면을 떠날 때까지의 활주거리임.
 
 제트 항공기의 경우
 
 $$
-\left( \frac{W_{0}}{S} \leq (TOP)\sigma \C_{L_{TO}} \left( frac{T_{SL}}{W_{0}} \right) \right)
+\left( \frac{W_{0}}{S} \leq (TOP) \sigma C_{L_{TO}} \left( \frac{T_{SL}}{W_{0}} \right) \right)
 $$
 
 프로펠러 항공기의 경우
 
 $$
-\left( \frac{W_{0}}{S} \leq (TOP)\sigma \C_{L_{TO}} \left(frac{hp_{SL}}{W_{0}} \right) \right)
+\left( \frac{W_{0}}{S} \leq (TOP)\sigma C_{L_{TO}} \left( \frac{hp_{SL}}{W_{0}} \right) \right)
 $$
 
-(2) 착륙거리
+4-2. 착륙거리
 
 착륙거리는 지상활주거리와 장애물 통과거리의 합임.
 
 $$
-\left( \frac{W_{0}}{S} \leq frac{S_{landing}-S_{a}}{80} \sigma C_{L_{max}} \frac{W_{0}}{W_{remained}}
+\left( \frac{W_{0}}{S} \leq \frac{S_{landing}-S_{a}}{80} \sigma C_{L_{max}} \frac{W_{0}}{W_{remained}}
 $$
 
 여기서 첫 항은 지상활주거리이며 바퀴가 접지하여 정지할 때까지의 거리를 의미함.
@@ -309,7 +309,7 @@ $$S_{a}$$ = 1,000(여객기 등급, 여기서 활공각은 3도)
 
             = 450(단거리 이착륙기, 활공각은 7도)
 
-(3) 실속속도
+4-3. 실속속도
 
 실속속도는 항공기가 최대양력계수 상태에서 등속수평비행하는 속도임.
 
