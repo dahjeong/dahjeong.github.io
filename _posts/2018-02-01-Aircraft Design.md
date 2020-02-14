@@ -2,6 +2,7 @@
 layout: post
 title: Aircraft Design 추진 계통 설계 <br>
 author: "Dajung Kim"
+comments: true
 ---
 설계 항공기의 순항 비행 마하수, 고도, 필요 추력, 엔진 종류와 갯수, 해면 정지 추력(SLST, $$T_{SL}$$), 바이패스비(BPR), 비연료 소모율(SFC), 기관 무게(W), 기관 길이(L), 기관(팬) 지름(D)이 주어짐
 
@@ -11,9 +12,7 @@ author: "Dajung Kim"
 표준 대기표에서 순항고도에서 압력비, 온도비를 찾고 추력식에 대입한다.
 
 $$
-\begin{equation}
-T_{H}=T_{SL} \frac{P_{H}}{P_{SL}} \frac{\theta_{SL}}{\theta_{H}}
-\end{equation}
+T_{H}=T_{SL} {P_{H}} \over {P_{SL}} {\theta_{SL}} \over {\theta_{H}}
 $$
 
 순항비행시 추력은 최대이륙 추력의 80%
@@ -55,8 +54,8 @@ $$
 이륙 거리 산정을 위해 필요한 전체 이륙 추력은
 
 $$
-T_{take-off}=T_{SL}*(Number of Engines)
-$$
+T_{take-off}=T_{SL} \times$$(Number of Engines)
+
 
 
 후연소기가 없는 아음속 항공기 기관($$0 \geq BPR \geq 6.0$$)

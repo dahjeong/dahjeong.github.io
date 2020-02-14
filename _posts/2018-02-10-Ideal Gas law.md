@@ -2,6 +2,7 @@
 layout: post
 title: Ideal Gas law (이상기체법칙)
 author: "Dajung Kim"
+comments: true
 ---
 
 ### 보일의 법칙(Boyle)

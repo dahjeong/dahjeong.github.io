@@ -3,6 +3,7 @@ layout: post
 title: Aircraft Design (Estimating preliminary design parameters) <br>
        항공기 설계 (설계 파라미터 추정) <br>
 author: "Dajung Kim"
+comments: true
 ---
 
 1. 설계 이륙 총 중량 예측
