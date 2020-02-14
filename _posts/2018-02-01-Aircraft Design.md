@@ -11,7 +11,9 @@ author: "Dajung Kim"
 표준 대기표에서 순항고도에서 압력비, 온도비를 찾고 추력식에 대입한다.
 
 $$
-T_{H}=T_{SL} \[ \frac{P_{H}}{P_{SL}} \] \[ \frac{\theta_{SL}}{\theta_{H}} \]
+\begin{equation}
+T_{H}=T_{SL} \frac{P_{H}}{P_{SL}} \frac{\theta_{SL}}{\theta_{H}}
+\end{equation}
 $$
 
 순항비행시 추력은 최대이륙 추력의 80%
