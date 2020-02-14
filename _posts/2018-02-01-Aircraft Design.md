@@ -51,15 +51,15 @@ $$
 $$
 W=W_{actual}(SF)^{1.1}
 $$
-<br>
 
+<br>
 이륙 거리 산정을 위해 필요한 전체 이륙 추력은
 
 $$
 T_{take-off}=T_{SL} \times \text{(Number of Engines)}
 $$
-<br>
 
+<br>
 후연소기가 없는 아음속 항공기 기관($$0 \geq BPR \geq 6.0$$)
 
 $$
