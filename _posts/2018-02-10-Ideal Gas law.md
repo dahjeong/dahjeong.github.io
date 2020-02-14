@@ -15,13 +15,11 @@ author: "Dajung Kim"
 ### 아보가드로의 법칙(Avogadro)
 (이상)기체의 압력과 온도가 일정할 때, 기체의 몰 수와 부피는 정비례한다.<br>
 
-아보가드로 수는 1몰에 들어 있는 구성입자 수 $$ = 6.02 \times 10^{23}    mol^{-1} $$
+아보가드로 수는 1몰에 들어 있는 구성입자 수 <img src="https://latex.codecogs.com/gif.latex?6.02&space;\times&space;10^{23}&space;mol^{-1}" title="6.02 \times 10^{23} mol^{-1}" />
 
 이상기체 상태방정식은 위의 세 법칙을 집대성한 것 
 
-$$ 
-\displaystyle PV = n \times R \times T 
-$$
+<img src="https://latex.codecogs.com/gif.latex?\displaystyle&space;PV&space;=&space;n&space;\times&space;R&space;\times&space;T" title="\displaystyle PV = n \times R \times T" />
 
 P : 압력 (Pressure)<br>
 V : 부피 (Volume)<br>
