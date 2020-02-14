@@ -127,8 +127,8 @@ $$
 여기서 
 $$
 K_{vs} = $$ variable sweep constant<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 1.04 if variable sweep<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 1.00 if fixed sweep
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 1.04 if variable sweep<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 1.00 if fixed sweep
 
 1-4. 설계 이륙총중량 (Design takeoff gross weight, $$W_{0}$$) 추정.
 
@@ -234,7 +234,7 @@ $$
 항공기의 비행경로각이 작을 경우 상승률은
 
 $$
-R/C = V \left( \frac{T}{W}-\frac{D}{W} \right) = V
+R/C = V \left( \frac{T}{W}-\frac{D}{W} \right) = V \left( \frac{T}{W}-\frac{qC_{D_{0}}}{(W/S)} -\frac{K}{q} \frac{W}{S} \right)
 $$
 
 피스톤엔진과 프로펠러 항공기의 추력 특성과 중량 보정을 포함하면
@@ -252,7 +252,7 @@ $$
 high bypass 터보팬엔진 항공기의 추력 특성과 중량 보정을 포함하면
 
 $$
-R/C = V \left( \frac{W_{0}}{W_{remained}} \right)
+R/C = V \left( \left(\frac{W_{0}}{W_{remained}} \right)\frac{a\sigma}{10V} \left(\frac{T_{SL}}{W_{0}} \right)-\left(\frac{W_{0}}{w_{remained}} \right)\frac{qC_{D_{0}}}{(W_{0}/S)}-\frac{K}{q} \left(\frac{W_{remained}}{W_{0}} \right)(\frac{W_{0}}{S} \right) \right)
 $$
 
 최대상승률이 발생하는 속도는
