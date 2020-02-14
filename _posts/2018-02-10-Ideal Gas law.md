@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ideal Gas law<br>(이상기체법칙)
+title: Ideal Gas law (이상기체법칙)
 author: "Dajung Kim"
 ---
 
@@ -21,11 +21,11 @@ author: "Dajung Kim"
 
 <img src="https://latex.codecogs.com/gif.latex?\displaystyle&space;PV&space;=&space;n&space;\times&space;R&space;\times&space;T" title="\displaystyle PV = n \times R \times T" />
 
-P : 압력 (Pressure)<br>
-V : 부피 (Volume)<br>
-n : 몰수 (Mole)<br>
-R : 이상기체 상수 (Ideal gas constant)<br>
-T : 온도(Temperature)<br>
+$$P$$: 압력 (Pressure)<br>
+$$V$$: 부피 (Volume)<br>
+$$n$$: 몰수 (Mole)<br>
+$$R$$: 이상기체 상수 (Ideal gas constant)<br>
+$$T$$: 온도(Temperature)<br>
 
 이상기체란 무엇인가?<br>
 기체 분자들이 자신의 크기보다 훨씬 큰 거리를 두고 멀리 떨어져 있다. 기체 입자의 부피는 0으로 간주한다.<br>
