@@ -252,7 +252,7 @@ $$
 high bypass 터보팬엔진 항공기의 추력 특성과 중량 보정을 포함하면
 
 $$
-R/C = V \left( \left(\frac{W_{0}}{W_{remained}} \right)\frac{a\sigma}{10V} \left(\frac{T_{SL}}{W_{0}} \right)-\left(\frac{W_{0}}{w_{remained}} \right)\frac{qC_{D_{0}}}{(W_{0}/S)}-\frac{K}{q} \left(\frac{W_{remained}}{W_{0}} \right)(\frac{W_{0}}{S} \right) \right)
+R/C = V \left( \left(\frac{W_{0}}{W_{remained}} \right)\frac{a\sigma}{10V} \left(\frac{T_{SL}}{W_{0}} \right)-\left(\frac{W_{0}}{w_{remained}} \right)\frac{qC_{D_{0}}}{(W_{0}/S)}-\frac{K}{q} \left(\frac{W_{remained}}{W_{0}} \right)\left(\frac{W_{0}}{S} \right)\right)
 $$
 
 최대상승률이 발생하는 속도는
