@@ -13,9 +13,9 @@ W의 무게를 갖는 비행기가 steady, level flight 중 이라고 생각해 
 W:  비행기 총 중량<br/>
 t: 시간<br/>
 g: 중력가속도<br/>
-\dot{m}_f:연료변화량<br/>
+$\dot{m}_f$:연료변화량<br/>
 T: 추력<br/>
-I_{sp}: efficiency 
+$I_{sp}$: efficiency 
 
 For steady, level flight 에서는 T = D, L = W, or
 
@@ -25,22 +25,22 @@ For steady, level flight 에서는 T = D, L = W, or
 
 <img src="https://latex.codecogs.com/gif.latex?\displaystyle&space;\frac{dW}{dt}&space;=-\frac{W}{(L/D)I_{sp}}" title="\displaystyle \frac{dW}{dt} =-\frac{W}{(L/D)I_{sp}}" />
 
-<img src="https://latex.codecogs.com/gif.latex?$$L/D$$" title="$$L/D$$" /> and <img src="https://latex.codecogs.com/gif.latex?$$I_{sp}$$" title="$$I_{sp}$$" /> 이 flight path를 따라 constant 라고 가정하면:
+L/D and $I_{sp}$ 이 flight path를 따라 constant 라고 가정하면:
 
 <img src="https://latex.codecogs.com/gif.latex?\displaystyle&space;\frac{dW}{W}&space;=&space;-\frac{dt}{(L/D)I_{sp}}" title="\displaystyle \frac{dW}{W} = -\frac{dt}{(L/D)I_{sp}}" />
 
 적분하면 
 
 <img src="https://latex.codecogs.com/gif.latex?\displaystyle&space;\ln\left(\frac{W}{W_i}\right)=-\frac{t}{(L/D)I_{sp}}" title="\displaystyle \ln\left(\frac{W}{W_i}\right)=-\frac{t}{(L/D)I_{sp}}" />
-W_i: 비행 초기 항공기 무게<br>
-W_f: 비행 종료 시 항공기 무게<br> 
+$W_i$: 비행 초기 항공기 무게<br>
+$W_f$: 비행 종료 시 항공기 무게<br> 
 
 비행 초기 및 종료 시간에 따라 적분하면 
 
 <img src="https://latex.codecogs.com/gif.latex?\displaystyle&space;\frac{L}{D}I_{sp}&space;\ln\left(\frac{W_i}{W_f}\right)=t_f" title="\displaystyle \frac{L}{D}I_{sp} \ln\left(\frac{W_i}{W_f}\right)=t_f" />
 
-t_\textrm{initial}: 비행 시작 시간, $$t_\textrm{initial}=0$$<br>
-t_f: 비행 종료 시간
+$t_\textrm{initial}$: 비행 시작 시간, $t_\textrm{initial}=0$<br>
+$t_f$: 비행 종료 시간
 
 비행 영역(Flight Range)은 항공기 속도(V)와 시간(t)의 곱이므로 
 
