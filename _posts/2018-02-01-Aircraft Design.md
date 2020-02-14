@@ -12,7 +12,7 @@ comments: true
 표준 대기표에서 순항고도에서 압력비, 온도비를 찾고 추력식에 대입한다.
 
 $$
-T_{H}=T_{SL} \frac{P_H}{P_S} \frac{theta_S}{theta_H}
+T_{H}=T_{SL} \frac{P_{H}}{P_{SL}} \frac{\theta_{SL}}{\theta_H}
 $$
 
 순항비행시 추력은 최대이륙 추력의 80%
@@ -53,10 +53,9 @@ $$
 
 이륙 거리 산정을 위해 필요한 전체 이륙 추력은
 
-<center>$$
-T_{take-off}=T_{SL} \times$$(Number of Engines)</center>
-
-
+$$
+T_{take-off}=T_{SL} \times \text{(Number of Engines)}
+$$
 
 후연소기가 없는 아음속 항공기 기관($$0 \geq BPR \geq 6.0$$)
 
