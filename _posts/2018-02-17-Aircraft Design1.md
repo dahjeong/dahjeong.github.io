@@ -8,7 +8,7 @@ comments: true
 
 1. 설계 이륙 총 중량 예측
    
-(1) 최대양항비 (Maximum Lift and Drag ratio) 추정
+1-1. 최대양항비 (Maximum Lift and Drag ratio) 추정
 
 유사항공기의 표피 면적비를 그래프를 이용하여 표피 면적비를 구함.
 
@@ -27,7 +27,7 @@ $$
 
 그림에서 최대 양항비($$(\frac{L}{D})_{max}$$)를 추정.
 
-(2) 연료중량비 (Fuel and Weight ratio) 추정
+1-2. 연료중량비 (Fuel and Weight ratio) 추정
 - STTO(Start, Taxi, and Take-off)
 
 $$
@@ -111,7 +111,8 @@ $$
 W_{f}/W_{0} = 1.06 \left( 1-\frac{W_{7}}{W_{0}} \right)
 $$
 
-(3) 공허중량비 (Empty weight ratio, $$W_{e}$$) 추정
+1-3. 공허중량비 (Empty weight ratio, $$W_{e}$$) 추정
+
 표로 부터 regression 계수를 찾아 아래 식에 대입함.
 
 $$
@@ -121,10 +122,13 @@ $$
 여기서 
 $$
 K_{vs} = $$ variable sweep constant
+
         = 1.04 if variable sweep
+
         = 1.00 if fixed sweep
 
-(4) 설계 이륙총중량 (Design takeoff gross weight, $$W_{0}$$) 추정.
+1-4. 설계 이륙총중량 (Design takeoff gross weight, $$W_{0}$$) 추정.
+
 승무원 하중($$W_{crew}$$), 유상하중($$W_{payload}$$)이 주어지면 아래의 식을 반복 계산하여 설계 이륙총중량($$W_{0}$$)을 찾음.
 
 $$
@@ -133,7 +137,7 @@ $$
 
 2. 양항곡선 추정
 
-(1) 표피면적($$S_{wet}$$)
+2-1. 표피면적($$S_{wet}$$)
 
 항공기의 설계 이륙총중량으로부터 항공기 표피면적을 구함.
 
@@ -143,7 +147,7 @@ $$
 
 여기서 계수 c와 d는 regression 계수이며 항공기 종류에 따라 아래의 표과 같이 결정됨.
 
-(2) 등가유해면적(equivalent parasite area, f)
+2-2. 등가유해면적(equivalent parasite area, f)
 
 등가표면마찰계수(equivalent skin friction coefficient, $$c_{f}$$)를 가정하면 상관 계수 a, b와 항공기 표피면적($$S_{wet}$$)을 이용하여 등가유해면적을 구함. $$c_{f}$$가 작을 수록 항공기의 표면이 매끄럽게 제작된 것을 의미함. 
 
@@ -151,11 +155,12 @@ $$
 log_{10}f=a+blog_{10}S_{wet}
 $$
 
-(3) 날개면적($$S_{ref}$$)
+2-3. 날개면적($$S_{ref}$$)
 
 $$W_{0}/S_{ref}$$ 를 특정값으로 가정하고 앞에서 구한 설계 이륙총중량($$W_{0}$$)을 이용하여 날개면적($$S_{ref}$$)을 구함.
 
-(4) 최소항력계수($$C_{D_{0}}$$)
+
+2-4. 최소항력계수($$C_{D_{0}}$$)
 
 최소항력계수는 점성에 의한 표면마찰과 관계있으며 아래의 식을 통해 구함.
 
@@ -163,7 +168,7 @@ $$
 C_{D_{0}}=\frac{f}{S_{ref}}
 $$
 
-(5) 항력($$C_{D}$$)
+2-5. 항력($$C_{D}$$)
 
 항공기의 항력은 최소항력계수와 양력에 의한 유도항력의 합으로 구할 수 있음.
 
@@ -193,7 +198,7 @@ $$
 
 3. 기능성능 요구도
 
-(1) 최대속도
+3-1. 최대속도
 
 특정고도에서 이용 추력(available thrust)을 T라고 할 때, 항공기의 최대속도는 이용 추력이 항력보다 클 때 발생하므로 아래와 같은 식을 만족해야 함.
 
@@ -219,12 +224,13 @@ $$
 W_{remained} = \frac{W_{remained}}{W_{0}}W_{0}
 $$
 
-(2) 상승률
+3-2. 상승률
 
 항공기의 비행경로각이 작을 경우 상승률은
 
 $$
-R/C = V \left( \frac{T}{W}-\frac{D}{W} \right) = V \left{ \frac{T}{W}-\frac{qC_{D_{0}}}{(W/S)}-\frac{K}{q} \left( \frac{W}{S} \right) \right}
+R/C = V \left( \frac{T}{W}-\frac{D}{W} \right) 
+    = V \left{ \frac{T}{W}-\frac{qC_{D_{0}}}{(W/S)}-\frac{K}{q} \left( \frac{W}{S} \right) \right}
 $$
 
 피스톤엔진과 프로펠러 항공기의 추력 특성과 중량 보정을 포함하면
@@ -242,7 +248,7 @@ $$
 high bypass 터보팬엔진 항공기의 추력 특성과 중량 보정을 포함하면
 
 $$
-R/C = V \left{ \left(\frac{W_{0}}{W_{remained}} \right)\frac{a\sigma}{10V} \left(\frac{T_{SL}}{W_{0}} \right)-\left(\frac{W_{0}}{w_{remained}} \right)\frac{qC_{D_{0}}}{(W_{0}/S)}-\frac{K}{q}\ \left(\frac{W_{remained}}{W_{0}} \right)(\frac{W_{0}}{S} \right)\}
+R/C = V \left{ \left(\frac{W_{0}}{W_{remained}} \right)\frac{a\sigma}{10V} \left(\frac{T_{SL}}{W_{0}} \right)-\left(\frac{W_{0}}{w_{remained}} \right)\frac{qC_{D_{0}}}{(W_{0}/S)}-\frac{K}{q}\ \left(\frac{W_{remained}}{W_{0}} \right)(\frac{W_{0}}{S} \right)\right}
 $$
 
 최대상승률이 발생하는 속도는
@@ -251,7 +257,7 @@ $$
 V = \sqrt{\frac{2}{\rho} \left(\frac{W_{remained}}{W_{0}} \right) \left(\frac{W_{0}}{S} \right)\sqrt{\frac{K}{3C_{D_{0}}}}}
 $$ 
 
-(3) 상승한계
+3-3. 상승한계
 
 표에서 항공기 타입에 따른 최대 상승률(R/C)을 찾고 상승 한계에 적용함.
 
@@ -269,7 +275,8 @@ $$
 
 4. 활주성능 요구도
 
-(1) 이륙거리
+4.1 이륙거리
+
 이륙거리는 지상활주거리(Ground roll)는 정지상태에서 가속하여 속도가 이륙속도(통상 실속속도의 1.1배)에 이르렀을 때, 즉 바퀴가 지면을 떠날 때까지의 활주거리임.
 
 제트 항공기의 경우
@@ -285,6 +292,7 @@ $$
 $$
 
 (2) 착륙거리
+
 착륙거리는 지상활주거리와 장애물 통과거리의 합임.
 
 $$
@@ -296,7 +304,9 @@ $$
 $$S_{a}$$은 장애물 통과거리이며 항공기 고도 50ft에서부터 바퀴가 접지할 때까지의 거리를 의미함.
 
 $$S_{a}$$ = 1,000(여객기 등급, 여기서 활공각은 3도)
+
             = 600(경항공기, Power-off Approach)
+
             = 450(단거리 이착륙기, 활공각은 7도)
 
 (3) 실속속도
@@ -305,8 +315,8 @@ $$S_{a}$$ = 1,000(여객기 등급, 여기서 활공각은 3도)
 
 FAR23 규정에 따르면 총 이륙중량 12,500lb 이하의 항공기는 특별한 경우(다발엔진을 채택하거나 특별한 상승률을 요구하는 경우)가 아니면 실속속도가 61knots를 넘어서는 안됨. 
 
-실속속도의 정의와 내부연료 70%를 고려하면 실속속도는 
+실속속도의 정의와 내부연료 70$$\%$$를 고려하면 실속속도는 
 
 $$
-\left( \frac{W_{0}}{S} \right) \leq \frac{1}{2} \rho V_{stall}^{2} C_{L_{max}} \frac{W_{0}}{W_{70%}}
+\left( \frac{W_{0}}{S} \right) \leq \frac{1}{2} \rho V_{{stall}^{2}} C_{L_{max}} \frac{W_{0}}{W_{70%}}
 $$
