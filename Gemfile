@@ -1,5 +1,7 @@
-source 'https://rubygems.org'
-#gem 'github-pages'
-gem 'sass'
-gem 'jekyll'
-gem 'nokogiri'
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+#gemspec
+gem "tale"
+gem "jekyll-remote-theme"
+gem "jekyll-paginate"
