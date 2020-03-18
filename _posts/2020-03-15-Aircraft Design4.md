@@ -1,7 +1,8 @@
 ---
-layout: post_page
+layout: post
 title: Aircraft Design <br> 최대 양력 계수 추정 <br>
-comment: true
+author: "Dajung Kim"
+comments: true
 ---
 
 1. 큰 가로세로비(High Aspect Ratio)

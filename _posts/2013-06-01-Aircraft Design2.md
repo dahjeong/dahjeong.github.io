@@ -1,8 +1,10 @@
 ---
-layout: post_page
+layout: post
 title: Aircraft Design <br> 추진 계통 설계 <br>
-comment: true
+author: "Dajung Kim"
+comments: true
 ---
+
 설계 항공기의 순항 비행 마하수, 고도, 필요 추력, 엔진 종류와 갯수, 해면 정지 추력(SLST, $$T_{SL}$$), 바이패스비(BPR), 비연료 소모율(SFC), 기관 무게(W), 기관 길이(L), 기관(팬) 지름(D)이 주어짐
 
 (1) 분사 추진 계통 설계 예

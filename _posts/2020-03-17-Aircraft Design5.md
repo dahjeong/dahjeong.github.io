@@ -1,7 +1,8 @@
 ---
-layout: post_page
+layout: post
 title: Aircraft Design <br> 고양력장치에 의한 양력곡선 변화 <br>
-comment: true
+author: "Dajung Kim"
+comments: true
 ---
 
 1. 최대 양력계수 $$C_{Lmax}$$, 이륙 최대 양력계수 $$C_{LmaxTO}$$, 착륙 최대 양력계수 $$C_{LmaxL}$$을 정한다. 

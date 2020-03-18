@@ -1,7 +1,8 @@
 ---
-layout: post_page
+layout: post
 title: Aircraft Design <br> 양력 곡선 기울기 추정 <br>
-comment: true
+author: "Dajung Kim"
+comments: true
 ---
 
 1. 날개의 양력곡선 기울기 $$(C_{L\alpha})_{W}$$

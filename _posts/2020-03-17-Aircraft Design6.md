@@ -1,7 +1,8 @@
 ---
-layout: post_page
+layout: post
 title: Aircraft Design <br> 전체 양력 곡선 추정 <br>
-comment: true
+author: "Dajung Kim"
+comments: true
 ---
 
 무장, 보조 연료탱크 등의 외부 장착물이 없고 착륙장치 등이 접힌 상태에서 항공기 전체의 양력 곡선을 추정하는 방법은 다음과 같다.
