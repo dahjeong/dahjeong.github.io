@@ -5,35 +5,39 @@ author: "Dajung Kim"
 comments: true
 ---
 
-1. 날개의 양력곡선 기울기 $$(C_{L\alpha})_{W}$$
+### 1. 날개의 양력곡선 기울기 $$(C_{L\alpha})_{W}$$
  
 날개의 양력곡선 기울기 $$(C_{L\alpha})_{W}$$ 는 속도 영역에 따라 각각 다른 경험식을 적용한다.
 
-1) 아음속
+1-1. 아음속 <br>
+
 $$
 (C_{L\alpha})_{W}=\frac{\pi A_{effective}}{1+\sqrt{1+[1-(M\cos\Lambda_{c/2})^{2}](\frac{A}{2\cos\Lambda_{c/2}})^{2}}} 
 $$
+
 여기서 A는 날개의 가로세로비이고, $$A_{effective}$$는 날개 끝 판(wing tip plate)이나 윙렛이 있는 경우 유효 가로세로비이며 다음과 같이 구한다.
 
 날개 끝 판 $$A_{effective} = A(1+1.9h/b)$$
 
 윙렛       $$A_{effective} \approx 1.2A$$
 
-2) 초음속
+1-2. 초음속 <br>
 
-이차원 선형 이론에 기초한 경험식
+아래의 이차원 선형 이론에 기초한 경험식을 이용하여 구한다. 
+
 $$
 (C_{L\alpha})_{W} = \frac{4}{\sqrt{M^{2}-1}}
 $$
+
 (단, M>1/$$\cos\Lambda_{LE}$$)
 
 또는 DATACOM Method를 이용한다. 
 
-3)  천음속
+1-3.  천음속 <br>
 
 아음속에서 구한 값과 초음속에서 구한 값 사이를 부드러운 곡선으로 연결한다. 
 
-2. 수평꼬리날개에 의한 양력곡선 기울기 증가분 $$\Delta(C_{L\alpha})_{T} $$
+### 2. 수평꼬리날개에 의한 양력곡선 기울기 증가분 $$\Delta(C_{L\alpha})_{T} $$
 
 $$
 \Delta(C_{L\alpha})_{T} = (C'_{L\alpha})_{T} \left( 1- \frac{\partial\epsilon}{\partial\alpha} \right)\frac{q_{t}}{q_{\infty}}\frac{S_{T}}{S_{ref}}
@@ -47,7 +51,8 @@ $$
 
 여기서 b는 날개 길이(span)이다.
 
-3. 카나드에 의한 양력곡선 기울기 증가분 $$\Delta(C_{L\alpha})_{C}$$
+### 3. 카나드에 의한 양력곡선 기울기 증가분 $$\Delta(C_{L\alpha})_{C}$$
+
 $$
 \Delta(C_{L\alpha})_{C} = (C'_{L\alpha})_{C} \left(1+\frac{\partial \epsilon_{u}}{\partial \alpha}\right)\frac{S_{C}}{S_{ref}}
 $$
@@ -58,8 +63,10 @@ $$
 \frac{\partial \epsilon_{u}}{\partial \alpha} = (0.3A^{0.3}-0.33)\left(\frac{l_{c}}{\bar{c}} \right)^{(1.04+6A^{-1.7})}
 $$
 
-4. 양력곡선 기울기 $$C_{L\alpha} = dC_{L/d\alpha}$$
-1) 아음속
+### 4. 전체 양력곡선 기울기 $$C_{L\alpha} = dC_{L/d\alpha}$$
+
+4-1. 아음속<br>
+
 $$
    C_{L\alpha} = (C_{L\alpha})_{W-B} + \Delta(C_{L\alpha})_{T} + \Delta(C_{L\alpha})_{C}
 $$
@@ -84,7 +91,8 @@ $$
 
 A는 날개의 가로세로비(spect ratio)
 
-1) 초음속
+4-2. 초음속<br>
+
 $$
    C_{L\alpha} \approx (C_{L\alpha})_{W-B} = (C_{L\alpha})_{W} K_{B} 
 $$
