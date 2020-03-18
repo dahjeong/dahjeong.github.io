@@ -20,33 +20,32 @@ $$T_{ref}=0.8 * T_{H} $$
 $$T_{ref_{engine}}=T_{ref}/n$$
 
 스케일 계수(scale factor, SF)는 설계 항공기의 필요추력과 표준 기관의 추력의 비이다.
-$$SF = T_{ref_{engine}}/T_{actual}$$
-
-$$T_{SL} = T_{SL_{actual}}(SF)$$
-$$L=L_{actual}(SF)^{0.4}$$
-$$D=D_{actual}(SF)^{0.5}$$
-$$W=W_{actual}(SF)^{1.1}$$
+$$SF = T_{ref_{engine}}/T_{actual}\\
+T_{SL} = T_{SL_{actual}}(SF)\\
+L=L_{actual}(SF)^{0.4}\\
+D=D_{actual}(SF)^{0.5}\\
+W=W_{actual}(SF)^{1.1}$$
 
 이륙 거리 산정을 위해 필요한 전체 이륙 추력은
 $$T_{take-off}=T_{SL}*(Number of Engines)$$
 
 
 후연소기가 없는 아음속 항공기 기관($$0 \geq BPR \geq 6.0$$)
-$$W=0.084T^{1.1} \exp{(-0.045BPR)}$$
-$$L=2.22T^{0.4}M^{0.2}$$
-$$D=0.3937T^{0.5} \exp{(0.04BPR)}$$
-$$SFC_{maxT}=0.67 \exp{(-0.12BPR)}$$
-$$T_{cruise}=0.60T^{0.9} \exp{(0.02BPR)}$$
-$$SFC_{cruise}=0.88 \exp{(-0.05BPR)}$$
+$$W=0.084T^{1.1} \exp^{(-0.045BPR)}\\
+L=2.22T^{0.4}M^{0.2}\\
+D=0.3937T^{0.5} \exp^{(0.04BPR)}\\
+SFC_{maxT}=0.67 \exp^{(-0.12BPR)}\\
+T_{cruise}=0.60T^{0.9} \exp^{(0.02BPR)}\\
+SFC_{cruise}=0.88 \exp^{(-0.05BPR)}$$
 
 
 후연소기가 있는 초음속 전투기 및 폭격기($$1 \geq M \geq 2.5$$, $$0 \geq BPR \geq 1.0$$)
-$$ W = 0.063 T^{1.1} M^{0.25} \exp{(-0.81BPR)} $$
-$$ L = 3.06 T^{0.4} M^{0.2} $$
-$$ D = 0.288 T^{0.5} \exp{(0.04 BPR)} $$
-$$ SFC_{maxT} = 2.1 \exp{(-0.12 BPR)} $$
-$$ T_{cruise} = 1.6T^{0.74} \exp{(0.023 BPR)} $$
-$$ SFC_{cruise} = 1.04 \exp{-(0.186 BPR)} $$
+$$ W = 0.063 T^{1.1} M^{0.25} \exp^{(-0.81BPR)}\\
+L = 3.06 T^{0.4} M^{0.2}\\
+D = 0.288 T^{0.5} \exp^{(0.04 BPR)}\\
+SFC_{maxT} = 2.1 \exp^{(-0.12 BPR)}\\
+T_{cruise} = 1.6T^{0.74} \exp^{(0.023 BPR)}\\
+SFC_{cruise} = 1.04 \exp^{-(0.186 BPR)} $$
 
    {% page.comments = true %}
    {% if page.comments != false %}
