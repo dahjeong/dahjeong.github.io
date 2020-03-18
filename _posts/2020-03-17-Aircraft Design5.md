@@ -36,7 +36,3 @@ $$
 
 여기서 $$S_{flapped}$$는 날개에 고양력장치가 설치되어 있는 부분의 면적을 말한다. 그리고 $$\Lambda_{H.L.}$$ 은 플랩 힌지선의 후퇴각이다. 
 
-   {% page.comments = true %}
-   {% if page.comments != false %}
-   {% include disqus_comments.html %}
-   {% endif %}

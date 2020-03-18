@@ -93,7 +93,3 @@ $$
 $$
 K_{B} =1.07(1+d/b)^{2}
 $$
-   {% page.comments = true %}
-   {% if page.comments != false %}
-   {% include disqus_comments.html %}
-   {% endif %}

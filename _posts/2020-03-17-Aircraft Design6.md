@@ -12,8 +12,3 @@ comment: true
 4. 최대 양력계수 $$C_{L_{max}}$$ 와 그때의 받음각 $$\alpha_{max}$$를 구한다.
 5. 양력곡선의 직선 끝부분 $$\alpha^{*}$$와 최대 양력계수에서의 받음각 $$\alpha_{max}$$ 사이를 부드럽게 이어지도록 곡선을 그린다.
 
-
-   {% page.comments = true %}
-   {% if page.comments != false %}
-   {% include disqus_comments.html %}
-   {% endif %}

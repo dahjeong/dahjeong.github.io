@@ -45,9 +45,4 @@ L = 3.06 T^{0.4} M^{0.2}\\
 D = 0.288 T^{0.5} \exp^{(0.04 BPR)}\\
 SFC_{maxT} = 2.1 \exp^{(-0.12 BPR)}\\
 T_{cruise} = 1.6T^{0.74} \exp^{(0.023 BPR)}\\
-SFC_{cruise} = 1.04 \exp^{-(0.186 BPR)} $$
-
-   {% page.comments = true %}
-   {% if page.comments != false %}
-   {% include disqus_comments.html %}
-   {% endif %}
+SFC_{cruise} = 1.04 \exp^{(-0.186 BPR)} $$

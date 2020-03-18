@@ -93,7 +93,3 @@ $$
 
 (C_{L\alpha})_{T}
 
-   {% page.comments = true %}
-   {% if page.comments != false %}
-   {% include disqus_comments.html %}
-   {% endif %}
