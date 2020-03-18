@@ -32,7 +32,7 @@ $$T_{take-off}=T_{SL}*(Number of Engines)$$
 
 
 후연소기가 없는 아음속 항공기 기관($$0 \geq BPR \geq 6.0$$)
-$$W=0.084T^{1.1}e^{(-0.045BPR)}$$
+$$W=0.084T^{1.1} \exp^{(-0.045BPR)}$$
 $$L=2.22T^{0.4}M^{0.2}$$
 $$D=0.3937T^{0.5} \exp^{(0.04BPR)}$$
 $$SFC_{maxT}=0.67 \exp^{(-0.12BPR)}$$
@@ -41,12 +41,12 @@ $$SFC_{cruise}=0.88 \exp^{(-0.05BPR)}$$
 
 
 후연소기가 있는 초음속 전투기 및 폭격기($$1 \geq M \geq 2.5$$, $$0 \geq BPR \geq 1.0$$)
-$$W=0.063T^{1.1}M^{0.25}e^{(-0.81BPR)}$$
-$$L=3.06T^{0.4}M^{0.2}$$
-$$D=0.288T^{0.5} \exp^{(0.04BPR)}$$
-$$SFC_{maxT}=2.1 \exp^{(-0.12BPR)}$$
-$$T_{cruise}=1.6T^{0.74} \exp^{(0.023BPR)}$$
-$$SFC_{cruise}=1.04 \exp^{-(0.186BPR)}$$
+$$ W = 0.063 T^{1.1} M^{0.25} \exp^{(-0.81BPR)} $$
+$$ L = 3.06 T^{0.4} M^{0.2} $$
+$$ D = 0.288 T^{0.5} \exp^{(0.04 BPR)} $$
+$$ SFC_{maxT} = 2.1 \exp^{(-0.12 BPR)} $$
+$$ T_{cruise} = 1.6T^{0.74} \exp^{(0.023 BPR)} $$
+$$ SFC_{cruise} = 1.04 \exp^{-(0.186 BPR)} $$
 
    {% page.comments = true %}
    {% if page.comments != false %}
