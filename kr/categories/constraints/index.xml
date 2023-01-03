@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Constraints on 다정이 노트</title>
+    <link>https://dahjeong.github.io/kr/categories/constraints/</link>
+    <description>Recent content in Constraints on 다정이 노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/kr/categories/constraints/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Penalty Methods</title>
+      <link>https://dahjeong.github.io/kr/optimization/penalty/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/optimization/penalty/</guid>
+      <description>
+        
+          
+            Penalty method 제약조건이 있는 Constrained optimization을 간단하게 제약조건이 없는 unconstrained optimization으로 변환할 수 있는 방법이다. penalty parameter 설정에 의해서 true optimum에 수렴하지 않을 경우가 있어서 gradient based optimization에서는 더이상 사용되지 않는다. graient free method에서 사용되기도 하고, constrained optimization을 이해하는데 도움이 되기 때문에 살펴보자. 일단 constrained optimization problem의 formulation은 아래와 같다. $$\begin{aligned} \text{minimize} \quad &amp;amp; f(x) &amp;amp; \newline \text{by varying} \quad &amp;amp; x_i &amp;amp; i=1,...,n_x \newline \text{subject to} \quad &amp;amp; g_j(x) \leq 0 &amp;amp; j=1,.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

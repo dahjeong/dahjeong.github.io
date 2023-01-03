@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>high lift device on 다정이 노트</title>
+    <link>https://dahjeong.github.io/kr/tags/high-lift-device/</link>
+    <description>Recent content in high lift device on 다정이 노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 17 Mar 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/kr/tags/high-lift-device/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>고양력장치에 의한 양력곡선 변화</title>
+      <link>https://dahjeong.github.io/kr/aircraft/high-lift-device/</link>
+      <pubDate>Sat, 17 Mar 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/aircraft/high-lift-device/</guid>
+      <description>
+        
+          
+            1. 고양력장치에 의한 양력 증가량 고양력장치를 사용하여 얻어지는 항공기의 최대 양력계수와 영 양력받음각 $\alpha_{L=0}$ 의 증가량은 다음과 같다.
+$$\Delta C_{Lmax} = \Delta C_{lmax} \left( \frac{S_{flapped}}{S_{ref}} \right) \cos{\Lambda_{H.L.}}$$
+$$\Delta \alpha_{L=0} = (\Delta \alpha_{L=0})_{\text{airfoil}} \left( \frac{S_{\text{flapped}}}{S_{ref}} \right) \cos{\Lambda_{H.L.}}$$ 여기서 $S_{\text{flapped}}$는 날개에 고양력장치가 설치되어 있는 부분의 면적을 말한다. 그리고 $\Lambda_{H.L.}$ 은 플랩 힌지선의 후퇴각이다.
+1-1. Plain Flap
+$$\Delta C_{l} = C_{l \delta_{f}} \delta_{f} K&#39;$$
+여기서 플랩 각 양력선 기울기 $C_{l\delta_{f}}$와 계수 K&#39;는 아래의 그림을 통해서 구할 수 있다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

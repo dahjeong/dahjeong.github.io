@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization on Dajung&#39;s Notes</title>
+    <link>https://dahjeong.github.io/categories/optimization/</link>
+    <description>Recent content in Optimization on Dajung&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 14 Apr 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/categories/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gradient-free Optimization</title>
+      <link>https://dahjeong.github.io/optimization/gradient-free/</link>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/optimization/gradient-free/</guid>
+      <description>
+        
+          
+            Gradient-Free Optimization 이건 언제 사용하는 거냐? gradient가 계산하기 복잡하거나 계산을 할 수 없는 경우(function evaluation 값이 noisy하거나 아니면 목적 함수가 continuous 하지 않거나, 블랙박스로 싸여있는 legacy 코드라 고칠수가 없는데 noisy하거나 어떤 값이 나오는지 알 수 없을 경우거나, 어떤 경우에 아예 에러가 나오는데 최적화를 수행해야 할 때)에 gradient-free optimization이 유용하게 사용될 수 있다. multi-modal function을 최적화 할때 gradient-free optimization을 사용하여 global optimum을 얻기도 하는데 gradient-free optimization이라고 해서 모든 방법이 global optimum을 주는 것은 아니다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Multiobjective Optimization</title>
+      <link>https://dahjeong.github.io/optimization/multiobjective/</link>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/optimization/multiobjective/</guid>
+      <description>
+        
+          
+            Multiobjective Optimization 최적화 문제에서 목적함수 objective가 여러개 (주로 2, 3, 4정도) 있는 경우에 다목적 최적화 multiobjective optimization 를 수행한다. 근데 결국에는 하나를 선택해야 될 것인데 왜 다목적 최적화가 필요한 것인가? 그 이유는
+objectives의 tradeoff를 quantify 할 수 있기 때문이다. - 보통 objectives 들에 어떤 커플링이 있는데 mutliobjective optimization을 통해서 design variable의 변화에 대한 objectives의 sensitivty 를 알 수 있어서 최종 결정에 도움을 줄 수 있다. 실제로 하나의 design을 하는게 아니라 여러 option을 어떤 executive committee 같은 곳에 제시해야 하는 경우가 있다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Discrete Optimization</title>
+      <link>https://dahjeong.github.io/optimization/discrete/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/optimization/discrete/</guid>
+      <description>
+        
+          
+            Discrete Optimization Optimization의 Design variables가 discrete한 문제를 discrete optimization problem이라고 한다. 이는 discrete variable의 종류에 따라 3가지로 분류될 수 있다.
+binary (0 or 1) integer (vehivle의 wheel의 갯수 등을 선택하는 문제) discrete (예를 들어 금속의 종류를 선택한다거나 등의 문제) discrte opimization은 nondeterministic polynomial time complete 이므로 solution이 최적인 것을 verify할 수 있지만 solution을 효율적으로 구하는 방법이 없다. 그래서 주로 huristic 한 방법을 이용한다.
+Discrete optimization을 피하는 방법 Continuous variable이 discrete variable 보다 더 많은데 이 discrete variable때문에 discrete optimization을 선택해야 한다면 이것을 피하기 위해서 continuous optimization을 돌리고 discrete variable에만 round 하면 됨 그리고 그 variable을 fix한 상태에서 다시 optimization을 돌릴수도 있다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Trust-Region Methods</title>
+      <link>https://dahjeong.github.io/optimization/trust-region/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/optimization/trust-region/</guid>
+      <description>
+        
+          
+            Trust-Region Methods Line search에서는 방향과 step을 정해서 이동하면서 minimum인지 아닌지 확인하는 반면에 trust region methods에서는 radius를 정해서 그 안에서 approximated function의 minimum을 찾고 그 minimum으로 이동하여 다시 더 큰 radius의 region을 그리고 그 안에서 minimum을 찾는 행위를 반복한다. 최적값으로 수렴하기 전에는 항상 boundary에서 minimum 값을 갖지만 수렴하게되면 radius를 더 크게 해도 boundary 내의 특정 위치를 minimum 값으로 얻고 계산을 반복해도 minimum 값이 바뀌지 않는다. 이를 정리하면 trust-region methods는 아래와 같은 과정으로 진행되고 3번에서 1번으로 반복된다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

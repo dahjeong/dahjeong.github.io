@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Derivative on 다정이 노트</title>
+    <link>https://dahjeong.github.io/kr/categories/derivative/</link>
+    <description>Recent content in Derivative on 다정이 노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/kr/categories/derivative/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Complex Step</title>
+      <link>https://dahjeong.github.io/kr/optimization/complex-step/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/optimization/complex-step/</guid>
+      <description>
+        
+          
+            Complex step은 수치 미분값을 구하는 방법 중에 하나다. finite differencing을 유도할 때 small step $h$으로 real number가 아니라 imaginary로 취하고 Taylor expansion을 적용하면 아래와 같다. $$f(x+ih) = f(x) + ihf&#39;(x) - \frac{h^2}{2}f&#39;&#39;(x)-\frac{ih^3}{3!}f&#39;&#39;&#39;(x)+\cdots$$
+여기서 imaginary part만 모아서 보자. $$\text{Imag}[f(x+ih)] = hf&#39;(x) - \frac{h^3}{3!}f&#39;&#39;&#39;(x)+\cdots$$
+위의 방정식을 $f&#39;(x)$로 정리하면 아래와 같다. $$f&#39;(x) = \frac{\text{Imag}[f(x+ih)]}{h} + O(h^2)$$
+앞에서 finite differencing에서는 step의 크기가 줄어들면, analytic solution과 비교하였을 때 derivative 값의 오차가 줄어들다가 어느 순간이되면 numerical error로 인해서 (subtraction에 의한 significant number의 문제) step이 줄어들어도 error가 커지는 현상이 발견된다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Finite Differencing</title>
+      <link>https://dahjeong.github.io/kr/optimization/finite-differemcing/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/optimization/finite-differemcing/</guid>
+      <description>
+        
+          
+            수치적으로 미분값 구하는 방법은 4가지가 있는데 1) symbolic derivative 2) finite differencing 3)complex step method 4) automatic differenciation 이다. 그 중에서 가장 간단하게 자주 쓰이는 방법이 finite differencing 이다. 먼저 symbolic derivative는 함수의 analytic한 derivative를 찾는 방법이다. 예를 들어서 $f=\sin(x)$의 경우에 symbolic derivative는 $f=\cos(x)$이다. 그런데 이 방법은 implicit equation의 경우에 매우 비효율적인 연산이 되거나 계산 자체가 어렵다. 따라서 모든 함수에 symbolic derivative를 적용할 수가 없다.
+여기서 잠깐 implicit equation에 대해서 좀 더 자세히 알아보자.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

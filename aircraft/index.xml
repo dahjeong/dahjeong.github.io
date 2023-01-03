@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dajung&#39;s Notes</title>
+    <link>https://dahjeong.github.io/aircraft/</link>
+    <description>Recent content on Dajung&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 20 Mar 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/aircraft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>캠버 항력 (Camber Drag)</title>
+      <link>https://dahjeong.github.io/aircraft/camber-drag/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/camber-drag/</guid>
+      <description>
+        
+          
+            캠버항력은 에어포일의 캠버와 날개의 비틀림 각에 의해서 유발되는 항력이며 아래와 같이 표현할 수 있다.
+$$C_{D_{camber}} = \frac{e}{1-e} K (\Delta C_{L}^{2})$$
+여기서 e는 스팬 효율계수이며 K는 유도항력 비례상수, $\Delta C_{L}$은 캠버에 의한 양력 증가분이며 아래와 같다.
+$$\Delta C_{L} = \left( 1-\frac{1}{\pi \cdot A \cdot K} \right) C_{Lopt}$$
+여기서 $C_{Lopt}$는 일반적인 에어포일의 경우에 다음과 같다.
+$$C_{Lopt} = 0.8505 \left(1-e^{-18.728(f/c)}\right)$$
+$f/c$는 최대캠버와 날개시위의 비이다.
+초 임계 에어포일의 경우에 $C_{Lopt}$는 아래와 같다.
+$$C_{Lopt} = 0.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>유도항력 (Induced Drag)</title>
+      <link>https://dahjeong.github.io/aircraft/induced-drag/</link>
+      <pubDate>Thu, 19 Mar 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/induced-drag/</guid>
+      <description>
+        
+          
+            유도항력은 날개에서 양력이 발생하면 필연적으로 발생하는 날개 끝 와류에 의한 항력으로 양력계수의 제곱에 비례한다.
+$$C_{D_{i}} = KC^{2}_{L}$$
+여기서 비례상수 K는 Oswald 스팬 효율계수법(Oswald Span Efficiency Method)과 앞전 흡입법(Leading Edge Suction Method) 두 가지 방법으로 구할 수 있다.
+Oswald 스팬 효율계산법 아음속 항공기의 경우, 타원형 양력분포를 갖는 날개와 비교한 효율(e)에 의해서 K 값이 결정된다.
+$$K=\frac{1}{\pi e A}$$
+여기서 스팬효율계수 e는 경험식에 의해서 아래와 같이 결정된다.
+$\begin{aligned} e = 1.78(1-0.045A^{0.68})-0.64, (\Lambda_{LE} \le 30^{\circ}) \end{aligned}$ $\begin{aligned} e = 4.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>유해항력 (Parasite Drag)</title>
+      <link>https://dahjeong.github.io/aircraft/parasite-drag/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/parasite-drag/</guid>
+      <description>
+        
+          
+            유해항력은 양력과 독립적으로 발생하는 항력이며 마찰항력(frictio Drag), 형상항력(Form Drag), 압력항력(Pressure Drag), 간섭항력(Interference Drag) 또는 조파항력(Wave Drag) 등이 이에 해당한다.
+$$C_{D_{p}}=\Sigma(C_{f_{c}} \cdot FF_{c} \cdot Q_{c} \cdot S_{wet_{c}})\frac{1}{S_{ref}} + C_{D_{wave}} + C_{D_{base}} + C_{D_{misc}}$$
+여기서 $C_{f}$는 평판의 마찰항력계수(Flat Plate Skin Friction coeffient), FF는 형상 계수(Form Factor), Q는 간섭계수(Interference Factor), $C_{D_{wave}}$는 조파항력계수, $C_{D_{base}}$는 기저항력계수, $C_{D_{misc}}$는 기타 항력계수, $S_{ref}$는 항공기의 기준 면적, $S_{wet}$는 항공기 구성품의 표피 면적 (Wetted area) 이며 아래 첨자 c는 구성 요소(Component)들을 의미한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>전체 양력 곡선 추정</title>
+      <link>https://dahjeong.github.io/aircraft/total-lift-curve/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/total-lift-curve/</guid>
+      <description>
+        
+          
+            무장, 보조 연료탱크 등의 외부 장착물이 없고 착륙장치 등이 접힌 상태에서 항공기 전체의 양력 곡선을 추정하는 방법은 다음과 같다.
+구하고자 하는 비행 조건에서 항공기의 양력곡선 기울기 $C_{L\alpha}$를 구한다. 영 양력받음각, $\alpha_{L=0}$을 추정한다. 보통 개념설계 단계에서는 에어포일의 영받음각을 전체 날개의 영받음각으로 간주한다. 양력곡선의 직선부분이 끝나는 받음각 $\alpha^*$를 찾아서 $\alpha_{L=0}$로부터 $\alpha^{*}$까지 기울기 $C_{L\alpha}$인 직선을 그린다. 최대 양력계수 $C_{L_{max}}$ 와 그때의 받음각 $\alpha_{max}$를 구한다. 양력곡선의 직선 끝부분 $\alpha^{*}$와 최대 양력계수에서의 받음각 $\alpha_{max}$ 사이를 부드럽게 이어지도록 곡선을 그린다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>고양력장치에 의한 양력곡선 변화</title>
+      <link>https://dahjeong.github.io/aircraft/high-lift-device/</link>
+      <pubDate>Sat, 17 Mar 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/high-lift-device/</guid>
+      <description>
+        
+          
+            1. 고양력장치에 의한 양력 증가량 고양력장치를 사용하여 얻어지는 항공기의 최대 양력계수와 영 양력받음각 $\alpha_{L=0}$ 의 증가량은 다음과 같다.
+$$\Delta C_{Lmax} = \Delta C_{lmax} \left( \frac{S_{flapped}}{S_{ref}} \right) \cos{\Lambda_{H.L.}}$$
+$$\Delta \alpha_{L=0} = (\Delta \alpha_{L=0})_{\text{airfoil}} \left( \frac{S_{\text{flapped}}}{S_{ref}} \right) \cos{\Lambda_{H.L.}}$$ 여기서 $S_{\text{flapped}}$는 날개에 고양력장치가 설치되어 있는 부분의 면적을 말한다. 그리고 $\Lambda_{H.L.}$ 은 플랩 힌지선의 후퇴각이다.
+1-1. Plain Flap
+$$\Delta C_{l} = C_{l \delta_{f}} \delta_{f} K&#39;$$
+여기서 플랩 각 양력선 기울기 $C_{l\delta_{f}}$와 계수 K&#39;는 아래의 그림을 통해서 구할 수 있다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>최대 양력 계수 추정</title>
+      <link>https://dahjeong.github.io/aircraft/maximum-lift-coefficient/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/maximum-lift-coefficient/</guid>
+      <description>
+        
+          
+            1. 큰 가로세로비(High Aspect Ratio)
+큰 가로세로비란, 주날개의 가로세로비가 기준 가로세로비 $A_{Low}$ 보다 큰 경우, $A &amp;gt; A_{Low}$ 를 말한다. 여기서 기준 가로세로비는 아래와 같다.
+$$A_{Low} = \frac{3}{(C_{1}+1)\cos\Lambda_{LE}}$$
+여기서 $\Lambda_{LE}$는 이고, $C_{1}$은 테이퍼 비의 함수로 아래의 그림과 같다.
+큰 가로세로비를 가지는 항공기의 최대양력 계수는 다음과 같다.
+$$C_{Lmax} = \left(\frac{C_{Lmax}}{C_{lmax}}\right)C_{lmax}+\Delta C_{L_{\max}}$$
+여기서 $C_{lmax}$ 는 M=0.2일 때 에어포일의 최대양력계수이고 $(C_{Lmax}/C_{lmax})$ 는 다음과 같다.
+$$\left(\frac{C_{Lmax}}{C_{lmax}}\right) = A-B \cdot \Delta y&#39;$$
+여기서 A, B와 $\Delta y&#39;$ 은 $\Lambda_{LE}$를 이용해서 아래와 같이 구할 수 있다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>양력 곡선 기울기 추정</title>
+      <link>https://dahjeong.github.io/aircraft/lift-curve/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/lift-curve/</guid>
+      <description>
+        
+          
+            1. 날개의 양력곡선 기울기 $(C_{L\alpha})_{W}$ 날개의 양력곡선 기울기 $(C_{L\alpha})_{W}$ 는 속도 영역에 따라 각각 다른 경험식을 적용한다.
+1-1. 아음속 $$(C_{L \alpha})_{W} = \frac{ \pi A_{\text{effective}} }{1+\sqrt{1+[1-(M \cos{ \Lambda_{c/2} })^{2}] (\frac{A}{2\cos{\Lambda_{c/2}}})^{2}}}$$
+여기서 A는 날개의 가로세로비이고, $A_{\text{effective}}$는 날개 끝 판(wing tip plate)이나 윙렛이 있는 경우 유효 가로세로비이며 다음과 같이 구한다.
+날개 끝 판 $A_{\text{effective}} = A(1+1.9h/b)$
+윙렛 $A_{\text{effective}} \approx 1.2A$
+1-2. 초음속 아래의 이차원 선형 이론에 기초한 경험식을 이용하여 구한다.
+$$(C_{L\alpha})_{W} = \frac{4}{\sqrt{M^{2}-1}}$$
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>설계 파라미터 추정</title>
+      <link>https://dahjeong.github.io/aircraft/parameter-esitmation/</link>
+      <pubDate>Sat, 17 Feb 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/parameter-esitmation/</guid>
+      <description>
+        
+          
+            1. 설계 이륙 총 중량 예측 1-1. 최대양항비 (Maximum Lift and Drag ratio) 추정
+유사항공기의 표피 면적비를 그래프를 이용하여 표피 면적비를 구함.
+$$\frac{S_{wet}}{S_{ref}}$$
+$S_{wet}$: 항공기 표피 면적비 (공기와 접촉하고 있는 면적 전체)
+$S_{ref}$: 항공기 날개 면적 (항공기 위에서 projection 했을 때 면적)
+가로세로비(A)를 특정 값으로 결정하면 표피 면적 가로세로비를 구함.
+$$A_{wet} = A/(S_{wet}/S_{ref})$$
+그림에서 최대 양항비 $\left( (\frac{L}{D})_{max} \right)$를 추정.
+1-2. 연료중량비 (Fuel and Weight ratio) 추정
+STTO(Start, Taxi, and Take-off) $$W_{1}/W_{0} = 0.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>추진 계통 설계</title>
+      <link>https://dahjeong.github.io/aircraft/engine-design/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/engine-design/</guid>
+      <description>
+        
+          
+            설계 항공기의 순항 비행 마하수, 고도, 필요 추력, 엔진 종류와 갯수, 해면 정지 추력(SLST, $T_{SL}$), 바이패스비(BPR), 비연료 소모율(SFC), 기관 무게(W), 기관 길이(L), 기관(팬) 지름(D)이 주어짐.
+(1) 분사 추진 계통 설계 예
+표준 대기표에서 순항고도에서 압력비, 온도비를 찾고 추력식에 대입한다.
+$$T_{H}=T_{SL} \frac{P_{H}}{P_{SL}} \frac{\theta_{SL}}{\theta_H}$$
+순항비행시 추력은 최대이륙 추력의 80%
+$$T_{ref}=0.8 * T_{H}$$
+마하수가 1보다 적으면 램효과에 의한 추력 증가를 고려하지 않는다. 기관당 필요추력은
+$$T_{ref_{engine}}=T_{ref}/n$$
+스케일 계수(scale factor, SF)는 설계 항공기의 필요추력과 표준 기관의 추력의 비이다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

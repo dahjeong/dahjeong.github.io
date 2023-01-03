@@ -3,11 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dahjeong.github.io/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -15,12 +16,26 @@
                 href="https://dahjeong.github.io/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/categories/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/books/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/categories/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/books/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/books/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -28,44 +43,391 @@
                 href="https://dahjeong.github.io/categories/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/tags/hugo/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/post/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/categories/essay/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/post/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/essay/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dahjeong.github.io/post/"
+                href="https://dahjeong.github.io/categories/essay/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/series/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/books/life/</loc>
+    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/series/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/books/life/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dahjeong.github.io/series/"
+                href="https://dahjeong.github.io/books/life/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/categories/syntax/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/books/language/</loc>
+    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/books/language/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/books/language/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/books/feyman/</loc>
+    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/books/feyman/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/books/feyman/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/</loc>
+    <lastmod>2022-04-14T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/gradient-free/</loc>
+    <lastmod>2022-04-14T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/gradient-free/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/gradient-free/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/multiobjective/</loc>
+    <lastmod>2022-04-14T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/multiobjective/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/multiobjective/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/optimization/</loc>
+    <lastmod>2022-04-14T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/optimization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/optimization/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/sampling/</loc>
+    <lastmod>2022-04-14T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/sampling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/sampling/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/sampling-methods/</loc>
+    <lastmod>2022-04-14T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/sampling-methods/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/sampling-methods/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/discrete/</loc>
+    <lastmod>2022-04-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/discrete/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/discrete/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/constraints/</loc>
+    <lastmod>2022-04-12T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/constraints/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/constraints/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/penalty/</loc>
+    <lastmod>2022-04-12T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/penalty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/penalty/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/autobiography/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/autobiography/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/autobiography/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/books/destiny/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/books/destiny/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/books/destiny/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/manga/</loc>
+    <lastmod>2022-02-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/manga/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/manga/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/books/dath-note/</loc>
+    <lastmod>2022-02-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/books/dath-note/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/books/dath-note/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/novel/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/novel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/novel/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/books/old-man/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/books/old-man/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/books/old-man/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/complex-step/</loc>
+    <lastmod>2022-02-10T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/complex-step/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/complex-step/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/derivative/</loc>
+    <lastmod>2022-02-10T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/derivative/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/derivative/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/finite-differemcing/</loc>
+    <lastmod>2022-02-10T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/finite-differemcing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/finite-differemcing/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/line-search/</loc>
+    <lastmod>2022-02-10T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/line-search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/line-search/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/root-finding/</loc>
+    <lastmod>2022-02-10T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/root-finding/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/root-finding/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/search-direction/</loc>
+    <lastmod>2022-02-10T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/search-direction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/search-direction/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/optimization/trust-region/</loc>
+    <lastmod>2022-02-10T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/optimization/trust-region/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/optimization/trust-region/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/aircraft/</loc>
+    <lastmod>2020-03-20T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/aircraft/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/aircraft-design/</loc>
+    <lastmod>2020-03-20T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/aircraft-design/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/aircraft-design/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/tags/drag/</loc>
+    <lastmod>2020-03-20T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/tags/drag/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/tags/drag/"
+                />
   </url><url>
     <loc>https://dahjeong.github.io/tags/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-20T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/tags/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -73,112 +435,77 @@
                 href="https://dahjeong.github.io/tags/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/series/themes-guide/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/post/bundle/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/post/map/</loc>
-    <lastmod>2022-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/post/notices/</loc>
-    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/aircraft/camber-drag/</loc>
+    <lastmod>2020-03-20T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/tags/css/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/camber-drag/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dahjeong.github.io/tags/css/"
+                href="https://dahjeong.github.io/aircraft/camber-drag/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/tags/featured/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/aircraft/induced-drag/</loc>
+    <lastmod>2020-03-19T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/tags/html/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/induced-drag/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dahjeong.github.io/tags/html/"
+                href="https://dahjeong.github.io/aircraft/induced-drag/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/aircraft/parasite-drag/</loc>
+    <lastmod>2020-03-18T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/tags/markdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/tags/markdown/"
-                />
-  </url><url>
-    <loc>https://dahjeong.github.io/post/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/post/markdown-syntax/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/parasite-drag/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dahjeong.github.io/post/markdown-syntax/"
+                href="https://dahjeong.github.io/aircraft/parasite-drag/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/tags/lift/</loc>
+    <lastmod>2020-03-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/tags/lift/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/tags/lift/"
+                />
   </url><url>
-    <loc>https://dahjeong.github.io/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/post/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/post/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/post/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/post/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://dahjeong.github.io/aircraft/total-lift-curve/</loc>
+    <lastmod>2020-03-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/total-lift-curve/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/aircraft/total-lift-curve/"
+                />
   </url><url>
     <loc>https://dahjeong.github.io/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://dahjeong.github.io/pt/about/"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -186,7 +513,201 @@
                 href="https://dahjeong.github.io/about/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/tags/index/</loc>
+    <loc>https://dahjeong.github.io/tags/high-lift-device/</loc>
+    <lastmod>2018-03-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/tags/high-lift-device/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/tags/high-lift-device/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/aircraft/high-lift-device/</loc>
+    <lastmod>2018-03-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/high-lift-device/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/aircraft/high-lift-device/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/aircraft/maximum-lift-coefficient/</loc>
+    <lastmod>2018-03-15T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/maximum-lift-coefficient/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/aircraft/maximum-lift-coefficient/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/aircraft/lift-curve/</loc>
+    <lastmod>2018-03-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/lift-curve/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/aircraft/lift-curve/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/aircraft/parameter-esitmation/</loc>
+    <lastmod>2018-02-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/parameter-esitmation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/aircraft/parameter-esitmation/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/tags/engine/</loc>
+    <lastmod>2018-02-16T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/tags/engine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/tags/engine/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/aircraft/engine-design/</loc>
+    <lastmod>2018-02-16T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/aircraft/engine-design/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/aircraft/engine-design/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/etc/</loc>
+    <lastmod>2018-02-15T00:00:00+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/etc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/etc/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/etc/breguet-range-equation/</loc>
+    <lastmod>2018-02-15T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/etc/breguet-range-equation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/etc/breguet-range-equation/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/misc/</loc>
+    <lastmod>2018-02-15T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/misc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/misc/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/etc/ideal-gas-law/</loc>
+    <lastmod>2018-02-10T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/etc/ideal-gas-law/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/etc/ideal-gas-law/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/machine/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/movies/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/movies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/movies/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/music/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/music/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/music/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/travel/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/travel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/travel/"
+                />
   </url><url>
     <loc>https://dahjeong.github.io/search/</loc>
   </url>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dajung&#39;s Notes</title>
+    <link>https://dahjeong.github.io/etc/</link>
+    <description>Recent content on Dajung&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 15 Feb 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/etc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Breguet range equation</title>
+      <link>https://dahjeong.github.io/etc/breguet-range-equation/</link>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/etc/breguet-range-equation/</guid>
+      <description>
+        
+          
+            Breguet range equation은 비행기가 얼마나 멀리 날 수 있는가를 나타내는 방정식이다.
+$W$의 무게를 갖는 비행기가 steady, level flight 중 이라고 생각해 보자. 총 무게의 변화는 연료의 변화와 같다.
+$$\frac{dW}{dt} = g\dot{m_f} = \frac{T}{I_{sp}}$$
+$W$: 비행기 총 중량 $t$: 시간 $g$: 중력가속도 $\dot{m_f}$:연료변화량 $T$: 추력 $I_{sp}$: efficiency
+For steady, level flight 에서는 $T = D$, $L = W$, or
+$$W=L=D \left( \frac{L}{D} \right)=T \left( \frac{L}{D} \right)$$
+따라서, 항공기 총 무게의 변화량은
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ideal Gas law (이상기체법칙)</title>
+      <link>https://dahjeong.github.io/etc/ideal-gas-law/</link>
+      <pubDate>Sat, 10 Feb 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/etc/ideal-gas-law/</guid>
+      <description>
+        
+          
+            보일의 법칙(Boyle) (이상)기체의 온도와 양이 일정할 때, 압력과 부피는 반비례한다.
+=&amp;gt; 압력과 부피의 곱이 항상 일정
+샤를의 법칙(Charles) (이상)기체의 압력과 양이 일정할 때, 부피와 온도는 정비례한다.
+=&amp;gt; 절대 온도 0에서 기체 부피 0
+아보가드로의 법칙(Avogadro) (이상)기체의 압력과 온도가 일정할 때, 기체의 몰 수와 부피는 정비례한다.
+아보가드로 수는 1몰에 들어 있는 구성입자 수
+$$6.02 \times 10^{23} mol^{-1}$$
+이상기체 상태방정식은 위의 세 법칙을 집대성한 것
+$$PV = n \times R \times T$$
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

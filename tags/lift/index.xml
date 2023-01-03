@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lift on Dajung&#39;s Notes</title>
+    <link>https://dahjeong.github.io/tags/lift/</link>
+    <description>Recent content in lift on Dajung&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/tags/lift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>전체 양력 곡선 추정</title>
+      <link>https://dahjeong.github.io/aircraft/total-lift-curve/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/total-lift-curve/</guid>
+      <description>
+        
+          
+            무장, 보조 연료탱크 등의 외부 장착물이 없고 착륙장치 등이 접힌 상태에서 항공기 전체의 양력 곡선을 추정하는 방법은 다음과 같다.
+구하고자 하는 비행 조건에서 항공기의 양력곡선 기울기 $C_{L\alpha}$를 구한다. 영 양력받음각, $\alpha_{L=0}$을 추정한다. 보통 개념설계 단계에서는 에어포일의 영받음각을 전체 날개의 영받음각으로 간주한다. 양력곡선의 직선부분이 끝나는 받음각 $\alpha^*$를 찾아서 $\alpha_{L=0}$로부터 $\alpha^{*}$까지 기울기 $C_{L\alpha}$인 직선을 그린다. 최대 양력계수 $C_{L_{max}}$ 와 그때의 받음각 $\alpha_{max}$를 구한다. 양력곡선의 직선 끝부분 $\alpha^{*}$와 최대 양력계수에서의 받음각 $\alpha_{max}$ 사이를 부드럽게 이어지도록 곡선을 그린다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>최대 양력 계수 추정</title>
+      <link>https://dahjeong.github.io/aircraft/maximum-lift-coefficient/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/maximum-lift-coefficient/</guid>
+      <description>
+        
+          
+            1. 큰 가로세로비(High Aspect Ratio)
+큰 가로세로비란, 주날개의 가로세로비가 기준 가로세로비 $A_{Low}$ 보다 큰 경우, $A &amp;gt; A_{Low}$ 를 말한다. 여기서 기준 가로세로비는 아래와 같다.
+$$A_{Low} = \frac{3}{(C_{1}+1)\cos\Lambda_{LE}}$$
+여기서 $\Lambda_{LE}$는 이고, $C_{1}$은 테이퍼 비의 함수로 아래의 그림과 같다.
+큰 가로세로비를 가지는 항공기의 최대양력 계수는 다음과 같다.
+$$C_{Lmax} = \left(\frac{C_{Lmax}}{C_{lmax}}\right)C_{lmax}+\Delta C_{L_{\max}}$$
+여기서 $C_{lmax}$ 는 M=0.2일 때 에어포일의 최대양력계수이고 $(C_{Lmax}/C_{lmax})$ 는 다음과 같다.
+$$\left(\frac{C_{Lmax}}{C_{lmax}}\right) = A-B \cdot \Delta y&#39;$$
+여기서 A, B와 $\Delta y&#39;$ 은 $\Lambda_{LE}$를 이용해서 아래와 같이 구할 수 있다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>양력 곡선 기울기 추정</title>
+      <link>https://dahjeong.github.io/aircraft/lift-curve/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/aircraft/lift-curve/</guid>
+      <description>
+        
+          
+            1. 날개의 양력곡선 기울기 $(C_{L\alpha})_{W}$ 날개의 양력곡선 기울기 $(C_{L\alpha})_{W}$ 는 속도 영역에 따라 각각 다른 경험식을 적용한다.
+1-1. 아음속 $$(C_{L \alpha})_{W} = \frac{ \pi A_{\text{effective}} }{1+\sqrt{1+[1-(M \cos{ \Lambda_{c/2} })^{2}] (\frac{A}{2\cos{\Lambda_{c/2}}})^{2}}}$$
+여기서 A는 날개의 가로세로비이고, $A_{\text{effective}}$는 날개 끝 판(wing tip plate)이나 윙렛이 있는 경우 유효 가로세로비이며 다음과 같이 구한다.
+날개 끝 판 $A_{\text{effective}} = A(1+1.9h/b)$
+윙렛 $A_{\text{effective}} \approx 1.2A$
+1-2. 초음속 아래의 이차원 선형 이론에 기초한 경험식을 이용하여 구한다.
+$$(C_{L\alpha})_{W} = \frac{4}{\sqrt{M^{2}-1}}$$
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

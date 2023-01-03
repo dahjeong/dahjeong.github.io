@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Root finding on 다정이 노트</title>
+    <link>https://dahjeong.github.io/kr/categories/root-finding/</link>
+    <description>Recent content in Root finding on 다정이 노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/kr/categories/root-finding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Line Search</title>
+      <link>https://dahjeong.github.io/kr/optimization/line-search/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/optimization/line-search/</guid>
+      <description>
+        
+          
+            $$\underset{x}{\text{minimize}} f(x)$$ 위의 식과 같이 constraint가 없는 최적화 문제에 problem domain이 모든 영역에서 differentiable하면 (미분가능, 이건 연속이랑 다른 개념이라는 걸 고딩 때 배우지) 해당 함수의 gradient, $\nabla f = 0$ 지점이 함수의 극 값, 즉 maximum이나 minimum이 된다. 그래서 최적화 문제 풀 때 $\nabla f(x) = 0$ 의 방정식을 푸는데 (이 방정식을 만족시키는 x를 구한다) 이 과정에서 line search가 나온다.
+수치해석적으로 $x$를 적절히 이동시키면서 위의 방정식이 어떤 tolerance $\epsilon$ 내에서 만족되면 연산을 정지한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Search Direction</title>
+      <link>https://dahjeong.github.io/kr/optimization/search-direction/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/optimization/search-direction/</guid>
+      <description>
+        
+          
+            Search Direction line search 할 때 어디로 line 그어서 어느 방향으로 이동할 지를 결정해서 one dimensional problem을 반복적으로 푸는 것이다. 오늘은 이 search direction을 어떻게 정하는지 알아 보자. Matines &amp;amp; Andrew 의 text book에서는 아래의 5가지 방법을 소개한다.
+Steepest Descent Conjugate Gradient Newton&#39;s Method Quasi-Newton Methods Limited-Memory Quasi-Newton Methods Steepest Descent Gradient가 빠르게 증가하는 반대 방향으로 search direction을 정하는 것이다. $$p = - \nabla f$$ 또는 normalized를 이용하기도 함 $$p = - \frac{\nabla f}{||f||}$$ curvature가 방향에 따라 일정하면 빠르게 수렴한다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

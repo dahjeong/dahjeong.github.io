@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sampling on Dajung&#39;s Notes</title>
+    <link>https://dahjeong.github.io/categories/sampling/</link>
+    <description>Recent content in Sampling on Dajung&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 14 Apr 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/categories/sampling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sampling Methods</title>
+      <link>https://dahjeong.github.io/optimization/sampling-methods/</link>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/optimization/sampling-methods/</guid>
+      <description>
+        
+          
+            Sampling Methods sampling method 중에서도 optimization에서 주로 쓰이는 방법은 random sampling, Latin Hypercube Sampling(LHS), Low-discrepancy sequences 중에 하나인 Halton sequence이다. ramdom sampling은 그냥 random하게 sample을 선택하는 방법인데 이게, 도메인을 골고루 커버하지 못 할수가 있다. 특히 sampling 수를 줄이면 결과가 더 안좋은데 그래서 Latin Hypercube Sampling이 이를 개선한다.
+Latin Hypercube Sampling 일단 LHS의 결과를 보면 아래 그림과 같다.
+가로축으로 한 칸 한 칸씩 이동하면서 보면 완전히 비어 있는 열이 없고 세로축으로 한 칸 한 칸씩 이동하면서 봐도 완전히 비어있는 행이 없다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

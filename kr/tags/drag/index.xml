@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>drag on 다정이 노트</title>
+    <link>https://dahjeong.github.io/kr/tags/drag/</link>
+    <description>Recent content in drag on 다정이 노트</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 20 Mar 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/kr/tags/drag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>캠버 항력 (Camber Drag)</title>
+      <link>https://dahjeong.github.io/kr/aircraft/camber-drag/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/aircraft/camber-drag/</guid>
+      <description>
+        
+          
+            캠버항력은 에어포일의 캠버와 날개의 비틀림 각에 의해서 유발되는 항력이며 아래와 같이 표현할 수 있다.
+$$C_{D_{camber}} = \frac{e}{1-e} K (\Delta C_{L}^{2})$$
+여기서 e는 스팬 효율계수이며 K는 유도항력 비례상수, $\Delta C_{L}$은 캠버에 의한 양력 증가분이며 아래와 같다.
+$$\Delta C_{L} = \left( 1-\frac{1}{\pi \cdot A \cdot K} \right) C_{Lopt}$$
+여기서 $C_{Lopt}$는 일반적인 에어포일의 경우에 다음과 같다.
+$$C_{Lopt} = 0.8505 \left(1-e^{-18.728(f/c)}\right)$$
+$f/c$는 최대캠버와 날개시위의 비이다.
+초 임계 에어포일의 경우에 $C_{Lopt}$는 아래와 같다.
+$$C_{Lopt} = 0.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>유도항력 (Induced Drag)</title>
+      <link>https://dahjeong.github.io/kr/aircraft/induced-drag/</link>
+      <pubDate>Thu, 19 Mar 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/aircraft/induced-drag/</guid>
+      <description>
+        
+          
+            유도항력은 날개에서 양력이 발생하면 필연적으로 발생하는 날개 끝 와류에 의한 항력으로 양력계수의 제곱에 비례한다.
+$$C_{D_{i}} = KC^{2}_{L}$$
+여기서 비례상수 K는 Oswald 스팬 효율계수법(Oswald Span Efficiency Method)과 앞전 흡입법(Leading Edge Suction Method) 두 가지 방법으로 구할 수 있다.
+Oswald 스팬 효율계산법 아음속 항공기의 경우, 타원형 양력분포를 갖는 날개와 비교한 효율(e)에 의해서 K 값이 결정된다.
+$$K=\frac{1}{\pi e A}$$
+여기서 스팬효율계수 e는 경험식에 의해서 아래와 같이 결정된다.
+$\begin{aligned} e = 1.78(1-0.045A^{0.68})-0.64, (\Lambda_{LE} \le 30^{\circ}) \end{aligned}$ $\begin{aligned} e = 4.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>유해항력 (Parasite Drag)</title>
+      <link>https://dahjeong.github.io/kr/aircraft/parasite-drag/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://dahjeong.github.io/kr/aircraft/parasite-drag/</guid>
+      <description>
+        
+          
+            유해항력은 양력과 독립적으로 발생하는 항력이며 마찰항력(frictio Drag), 형상항력(Form Drag), 압력항력(Pressure Drag), 간섭항력(Interference Drag) 또는 조파항력(Wave Drag) 등이 이에 해당한다.
+$$C_{D_{p}}=\Sigma(C_{f_{c}} \cdot FF_{c} \cdot Q_{c} \cdot S_{wet_{c}})\frac{1}{S_{ref}} + C_{D_{wave}} + C_{D_{base}} + C_{D_{misc}}$$
+여기서 $C_{f}$는 평판의 마찰항력계수(Flat Plate Skin Friction coeffient), FF는 형상 계수(Form Factor), Q는 간섭계수(Interference Factor), $C_{D_{wave}}$는 조파항력계수, $C_{D_{base}}$는 기저항력계수, $C_{D_{misc}}$는 기타 항력계수, $S_{ref}$는 항공기의 기준 면적, $S_{wet}$는 항공기 구성품의 표피 면적 (Wetted area) 이며 아래 첨자 c는 구성 요소(Component)들을 의미한다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
