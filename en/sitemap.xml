@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dahjeong.github.io/</loc>
-    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -15,6 +15,39 @@
                 hreflang="en"
                 href="https://dahjeong.github.io/"
                 />
+  </url><url>
+    <loc>https://dahjeong.github.io/movies/</loc>
+    <lastmod>2023-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/movies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/movies/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/</loc>
+    <lastmod>2023-01-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/movie/</loc>
+    <lastmod>2023-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/movies/test/</loc>
+    <lastmod>2023-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dahjeong.github.io/etc/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
@@ -28,19 +61,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://dahjeong.github.io/etc/"
-                />
-  </url><url>
-    <loc>https://dahjeong.github.io/categories/</loc>
-    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://dahjeong.github.io/kr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/categories/"
                 />
   </url><url>
     <loc>https://dahjeong.github.io/categories/hugo/</loc>
@@ -64,6 +84,44 @@
   </url><url>
     <loc>https://dahjeong.github.io/etc/root-finding/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/</loc>
+    <lastmod>2022-12-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/machine/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/linear-regression/</loc>
+    <lastmod>2022-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/machine-learning/</loc>
+    <lastmod>2022-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/entropy/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/expected-values/</loc>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/bias-variance/</loc>
+    <lastmod>2022-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/sensitivity-specificity/</loc>
+    <lastmod>2022-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/confusion-matrix/</loc>
+    <lastmod>2022-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/machine/cross-validation/</loc>
+    <lastmod>2022-12-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dahjeong.github.io/books/</loc>
     <lastmod>2022-08-05T00:00:00+00:00</lastmod>
@@ -645,32 +703,6 @@
   </url><url>
     <loc>https://dahjeong.github.io/etc/ideal-gas-law/</loc>
     <lastmod>2018-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dahjeong.github.io/machine/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://dahjeong.github.io/kr/machine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/machine/"
-                />
-  </url><url>
-    <loc>https://dahjeong.github.io/movies/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://dahjeong.github.io/kr/movies/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/movies/"
-                />
   </url><url>
     <loc>https://dahjeong.github.io/music/</loc>
     <priority>0</priority>

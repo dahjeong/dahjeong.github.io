@@ -16,7 +16,7 @@
       <description>
         
           
-            일단 시작하기 전에 Windows 환경을 가정합니다. Github 계정이 있어야 한다. Git이 설치되어 있어야 한다. Hugo를 설치해야 한다. Hugo를 설치하는 방법은 다음과 같다. https://github.com/gohugoio/hugo/releases 에 접속하여 아래 스크린샷에 보이는 Assets을 찾는다. 자신의 컴퓨터에 맞는 파일(ex. hugo_0.109.0_windows-arms64.zip)을 다운로드 받고 압축을 푼다. Hugo.exe 파일이 있는 위치를 환경변수 path에 저장한다. 이제 예제 블로그를 복사해 보자!! 일단 https://themes.gohugo.io/ 에서 내가 마음에 드는 Hugo theme을 찾는다.
+            일단 시작하기 전에 Windows 환경을 가정합니다. Github 계정이 있어야 한다. Git이 설치되어 있어야 한다. Hugo를 설치해야 한다. Hugo를 설치하는 방법은 다음과 같다. https://github.com/gohugoio/hugo/releases 에 접속하여 아래 스크린샷에 보이는 Assets을 찾는다. 자신의 컴퓨터와 맞는 (다운로드 받을 theme이 지원하는) 파일(ex. ugo_extended_0.109.0_windows-amd64.zip)을 다운로드 받고 압축을 푼다. Hugo.exe 파일이 있는 위치를 환경변수 path에 저장한다. 이제 예제 블로그를 복사해 보자!! 일단 https://themes.gohugo.io/ 에서 내가 마음에 드는 Hugo theme을 찾는다.
 마음에 드는 theme page에서 Download 버튼을 누르면 theme이 저장되어 있는 Github로 넘어간다.
           
           
@@ -33,7 +33,7 @@
       <description>
         
           
-            구간법 (Braketing method) 연속함수 f(x) 의 값이 구간의 양 끝 $a \leq x \leq b$ 에서 조건 $f(a)f(b)&amp;lt;0$ $[f(a)$의 값과 $f(b)$의 값의 부호가 서로 다르다$]$을 만족하면 구간 내부에 $f(x)=0$을 만족하는 $x$가 적어도 한 개가 존재한다. 이렇게 근이 존재하는 구간을 알 때는 이분법(bisection), 가위치법(False-position method), 수정가위치법(modified false-position method) 과 같은 구간법을 적용해서 방정식의 근(해)를 구할 수 있다.
+            구간법 (Braketing method) 연속함수 $f(x)$ 의 값이 구간의 양 끝 $a \leq x \leq b$ 에서 조건 $f(a)f(b)&amp;lt;0$ $[f(a)$의 값과 $f(b)$의 값의 부호가 서로 다르다$]$을 만족하면 구간 내부에 $f(x)=0$을 만족하는 $x$가 적어도 한 개가 존재한다. 이렇게 근이 존재하는 구간을 알 때는 이분법(bisection), 가위치법(False-position method), 수정가위치법(modified false-position method) 과 같은 구간법을 적용해서 방정식의 근(해)를 구할 수 있다.
 Bisection method (이분법) $c = \frac{a+b}{2},\quad a &amp;lt; c &amp;lt; b$ 를 만족하는 $c$ 를 찾는다.
           
           
@@ -64,7 +64,7 @@ $$W=L=D \left( \frac{L}{D} \right)=T \left( \frac{L}{D} \right)$$
     </item>
     
     <item>
-      <title>Ideal Gas law (이상기체법칙)</title>
+      <title>Ideal gas law (이상기체법칙)</title>
       <link>https://dahjeong.github.io/etc/ideal-gas-law/</link>
       <pubDate>Sat, 10 Feb 2018 00:00:00 +0000</pubDate>
       

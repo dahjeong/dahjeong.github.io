@@ -223,7 +223,7 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>일단 시작하기 전에 Windows 환경을 가정합니다. Github 계정이 있어야 한다. Git이 설치되어 있어야 한다. Hugo를 설치해야 한다. Hugo를 설치하는 방법은 다음과 같다. <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 에 접속하여 아래 스크린샷에 보이는 Assets을 찾는다. 자신의 컴퓨터에 맞는 파일(ex. hugo_0.109.0_windows-arms64.zip)을 다운로드 받고 압축을 푼다. Hugo.exe 파일이 있는 위치를 환경변수 path에 저장한다. 이제 예제 블로그를 복사해 보자!! …</p>
+            <p>일단 시작하기 전에 Windows 환경을 가정합니다. Github 계정이 있어야 한다. Git이 설치되어 있어야 한다. Hugo를 설치해야 한다. Hugo를 설치하는 방법은 다음과 같다. <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 에 접속하여 아래 스크린샷에 보이는 Assets을 찾는다. 자신의 컴퓨터와 맞는 (다운로드 받을 theme이 지원하는) 파일(ex. ugo_extended_0.109.0_windows-amd64.zip)을 다운로드 받고 압축을 푼다. Hugo.exe 파일이 있는 위치를 환경변수 path에 저장한다. …</p>
           
           <br>
           <a href="https://dahjeong.github.io/etc/blog-posting/" title="Read More" class="excerpt_more button">Read More</a>
@@ -287,11 +287,466 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>구간법 (Braketing method) 연속함수 f(x) 의 값이 구간의 양 끝 $a \leq x \leq b$ 에서 조건 $f(a)f(b)&lt;0$ $[f(a)$의 값과 $f(b)$의 값의 부호가 서로 다르다$]$을 만족하면 구간 내부에 $f(x)=0$을 만족하는 $x$가 적어도 한 개가 존재한다. 이렇게 근이 존재하는 구간을 알 때는 이분법(bisection), 가위치법(False-position method), 수정가위치법(modified false-position method) 과 같은 구간법을 적용해서 방정식의 근(해)를 구할 수 있다.
-Bisection …</p>
+            <p>구간법 (Braketing method) 연속함수 $f(x)$ 의 값이 구간의 양 끝 $a \leq x \leq b$ 에서 조건 $f(a)f(b)&lt;0$ $[f(a)$의 값과 $f(b)$의 값의 부호가 서로 다르다$]$을 만족하면 구간 내부에 $f(x)=0$을 만족하는 $x$가 적어도 한 개가 존재한다. 이렇게 근이 존재하는 구간을 알 때는 이분법(bisection), 가위치법(False-position method), 수정가위치법(modified false-position method) 과 같은 구간법을 적용해서 방정식의 근(해)를 구할 수 있다. …</p>
           
           <br>
           <a href="https://dahjeong.github.io/etc/root-finding/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dahjeong.github.io/machine/linear-regression/" title="Least squares and linear regression">Least squares and linear regression</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 20, 2022</span>
+    <span class="post_time"> · 2 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Least%20squares%20and%20linear%20regression&url=https%3a%2f%2fdahjeong.github.io%2fmachine%2flinear-regression%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2fmachine%2flinear-regression%2f&t=Least%20squares%20and%20linear%20regression" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dahjeong.github.io/machine/linear-regression/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Data의 주요 경향성을 나타내는 equation을 찾을 때
+각각의 데이터와 우리가 가정한 linear equation간의 거리의 제곱을 최소화하는 방법이 가장 일반적인다. 연속함수에서 최소화한다는 것은 derivative = 0 이 되는 값을 찾는 것이다.
+데이터가 $\vec{x} = {x_1, x_2, \dots x_n}$, $\vec{y} = {y_1, y_2, \dots y_n}$ 일 때 Linear regression에서는 이 데이터를 $a \mathbf{x}+b= \mathbf{y}$ 로 근사한다. 그럼 여기서 unknown인 a와 b를 찾아보자.
+${a …</p>
+          
+          <br>
+          <a href="https://dahjeong.github.io/machine/linear-regression/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dahjeong.github.io/machine/entropy/" title="Entropy">Entropy</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 19, 2022</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Entropy&url=https%3a%2f%2fdahjeong.github.io%2fmachine%2fentropy%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2fmachine%2fentropy%2f&t=Entropy" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dahjeong.github.io/machine/entropy/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>엔트로피에 대해서 말하기 전에 surprise에 대해서 먼저 알아야 한다. surprise는 쉽게 말해서 확률의 반대인데, 예를 들어서 동전에 앞면이 나올 확률이 1인 경우에 앞면이 나올 surprise는 0가 된다. (동전 앞면이 나올 확률이 1이라는 것은 언제나 동전 앞면이 나온다는 건데 그럼 동전 앞면이 나왔을 때 놀라는 정도?는 0이라는 의미임) 근데 이 suprise는 something이 아닐 확률과는 다른 개념이므로 1-something 으로 정의되는 것이 아니라 1/(somthing) 으로 정의된다. 그렇지만 여기서도 문제가 발생하는게, $1/1=1$이  …</p>
+          
+          <br>
+          <a href="https://dahjeong.github.io/machine/entropy/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dahjeong.github.io/machine/expected-values/" title="Expected values">Expected values</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 18, 2022</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Expected%20values&url=https%3a%2f%2fdahjeong.github.io%2fmachine%2fexpected-values%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2fmachine%2fexpected-values%2f&t=Expected%20values" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dahjeong.github.io/machine/expected-values/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>기대값은 사건이 일어나서 얻는 값과 그 사건이 일어날 확률을 곱한것을 모두 합한 값이다. 예를 들어서 StatLand에서 Troll 2에 대해서 들어본 사람 수와 들어보지 못한 사람의 수가 아래의 표와 같다고 생각해 보자.
+Heard of Troll 2 Never heard of Troll 2 Total # 37 176 213 Probability 0.17 0.83 1 Outcome -1 1 이런 상황에서 우리가 지나가는 사람들에게 &quot;troll 2&quot;에 대해서 들어봤는지 아닌지에 대해서 물어보는 betting을 한다고 가정해 보자. …</p>
+          
+          <br>
+          <a href="https://dahjeong.github.io/machine/expected-values/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dahjeong.github.io/machine/bias-variance/" title="Bias and variation">Bias and variation</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 17, 2022</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Bias%20and%20variation&url=https%3a%2f%2fdahjeong.github.io%2fmachine%2fbias-variance%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2fmachine%2fbias-variance%2f&t=Bias%20and%20variation" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dahjeong.github.io/machine/bias-variance/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>아래 그림과 같이 하나의 target(빨간 점)을 맞추는 문제를 보자. Bias가 높다는 것은 우리의 prediction이 taget 점과 멀리 떨어져 있다는 것이다. prediction error가 높다는 것 Variance는 taget point에서의 error sum이 낮을 수 있지만 prediction이 정확하지 않은 것이다. 데이터의 noise pattern까지 모델이 다 capture 해 버려서 prediction 결과가 정확해지지 않는 것
+Source: …</p>
+          
+          <br>
+          <a href="https://dahjeong.github.io/machine/bias-variance/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dahjeong.github.io/machine/sensitivity-specificity/" title="Sensitivity and specificity">Sensitivity and specificity</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 16, 2022</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Sensitivity%20and%20specificity&url=https%3a%2f%2fdahjeong.github.io%2fmachine%2fsensitivity-specificity%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2fmachine%2fsensitivity-specificity%2f&t=Sensitivity%20and%20specificity" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dahjeong.github.io/machine/sensitivity-specificity/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Sensitivity는 actual condition이 positive 인 것이 prediction으로 얼마나 정확히 밝혀졌는지를 말해 준다. 실제로 positive인 사람들 전체 중에 prediction이 positive로 추정한 정도 $$\text{Sensitivity} = \frac{\text{True positives}}{ \text{True positives + False negatives}}$$
+Specificity 는 실제로 negarive인 것이 prediction으로 얼마나 정확히 밝혀졌는지를 말해 준다. 실제로 negative …</p>
+          
+          <br>
+          <a href="https://dahjeong.github.io/machine/sensitivity-specificity/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dahjeong.github.io/machine/confusion-matrix/" title="Confusion matrix">Confusion matrix</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 15, 2022</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Confusion%20matrix&url=https%3a%2f%2fdahjeong.github.io%2fmachine%2fconfusion-matrix%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2fmachine%2fconfusion-matrix%2f&t=Confusion%20matrix" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dahjeong.github.io/machine/confusion-matrix/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Confusion matrix은 내가 선택한 machine learning algorithm이 뭘 잘 prediction했고 어떤 걸 잘 prediction하지 못하는지 알려준다. 이 confusion matirix를 비교함으로써 여러 가지 machine learning methods (Logistic regression, Support Vector machine learning, K-nearest, etc.) 중에 어떤 것을 선택하는 것이 가장 좋은 결과를 주는지도 알 수 있다.
+Predicted condition Positive (PP) Negative (PN) …</p>
+          
+          <br>
+          <a href="https://dahjeong.github.io/machine/confusion-matrix/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dahjeong.github.io/machine/cross-validation/" title="Cross validation">Cross validation</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 14, 2022</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Cross%20validation&url=https%3a%2f%2fdahjeong.github.io%2fmachine%2fcross-validation%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2fmachine%2fcross-validation%2f&t=Cross%20validation" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dahjeong.github.io/machine/cross-validation/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>보통 100% 샘플 중에서
+Train (75%) Test (25%) 로 나눠서 사용한다. 근데 여기서 75%와 25%를 나눌때도 총 데이터에서 어떤 부분에서 선택할 것인지도 중요함 데이터를 블록 단위로 나누고 (여기서 예를 들어 A, B, C, D 4개로 나눴다고 하자) 4개 중에서 A를 test data로 선정하고 나머지를 training data로 놓고 machine learning algorithm을 돌린다. 그 다음에는 B를 test data로 선정하고 나머지를 training data로 놓고 다시 알고리즘 돌린다. 이런식으로 반복하는게 cross …</p>
+          
+          <br>
+          <a href="https://dahjeong.github.io/machine/cross-validation/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -356,459 +811,6 @@ Bisection …</p>
           
           <br>
           <a href="https://dahjeong.github.io/optimization/gradient-free/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dahjeong.github.io/optimization/multiobjective/" title="Multiobjective Optimization">Multiobjective Optimization</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Apr 14, 2022</span>
-    <span class="post_time"> · 3 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Multiobjective%20Optimization&url=https%3a%2f%2fdahjeong.github.io%2foptimization%2fmultiobjective%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2foptimization%2fmultiobjective%2f&t=Multiobjective%20Optimization" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dahjeong.github.io/optimization/multiobjective/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Multiobjective Optimization 최적화 문제에서 목적함수 objective가 여러개 (주로 2, 3, 4정도) 있는 경우에 다목적 최적화 multiobjective optimization 를 수행한다. 근데 결국에는 하나를 선택해야 될 것인데 왜 다목적 최적화가 필요한 것인가? 그 이유는
-objectives의 tradeoff를 quantify 할 수 있기 때문이다. - 보통 objectives 들에 어떤 커플링이 있는데 mutliobjective optimization을 통해서 design variable의 변화에 대한 objectives …</p>
-          
-          <br>
-          <a href="https://dahjeong.github.io/optimization/multiobjective/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dahjeong.github.io/optimization/sampling-methods/" title="Sampling Methods">Sampling Methods</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Apr 14, 2022</span>
-    <span class="post_time"> · 2 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Sampling%20Methods&url=https%3a%2f%2fdahjeong.github.io%2foptimization%2fsampling-methods%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2foptimization%2fsampling-methods%2f&t=Sampling%20Methods" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dahjeong.github.io/optimization/sampling-methods/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Sampling Methods sampling method 중에서도 optimization에서 주로 쓰이는 방법은 random sampling, Latin Hypercube Sampling(LHS), Low-discrepancy sequences 중에 하나인 Halton sequence이다. ramdom sampling은 그냥 random하게 sample을 선택하는 방법인데 이게, 도메인을 골고루 커버하지 못 할수가 있다. 특히 sampling 수를 줄이면 결과가 더 안좋은데 그래서 Latin Hypercube Sampling이 이를 개선한다.
-Latin …</p>
-          
-          <br>
-          <a href="https://dahjeong.github.io/optimization/sampling-methods/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dahjeong.github.io/optimization/discrete/" title="Discrete Optimization">Discrete Optimization</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Apr 13, 2022</span>
-    <span class="post_time"> · 5 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Discrete%20Optimization&url=https%3a%2f%2fdahjeong.github.io%2foptimization%2fdiscrete%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2foptimization%2fdiscrete%2f&t=Discrete%20Optimization" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dahjeong.github.io/optimization/discrete/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Discrete Optimization Optimization의 Design variables가 discrete한 문제를 discrete optimization problem이라고 한다. 이는 discrete variable의 종류에 따라 3가지로 분류될 수 있다.
-binary (0 or 1) integer (vehivle의 wheel의 갯수 등을 선택하는 문제) discrete (예를 들어 금속의 종류를 선택한다거나 등의 문제) discrte opimization은 nondeterministic polynomial time complete 이므로 solution이  …</p>
-          
-          <br>
-          <a href="https://dahjeong.github.io/optimization/discrete/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dahjeong.github.io/optimization/penalty/" title="Penalty Methods">Penalty Methods</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Apr 12, 2022</span>
-    <span class="post_time"> · 2 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Penalty%20Methods&url=https%3a%2f%2fdahjeong.github.io%2foptimization%2fpenalty%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2foptimization%2fpenalty%2f&t=Penalty%20Methods" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dahjeong.github.io/optimization/penalty/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Penalty method 제약조건이 있는 Constrained optimization을 간단하게 제약조건이 없는 unconstrained optimization으로 변환할 수 있는 방법이다. penalty parameter 설정에 의해서 true optimum에 수렴하지 않을 경우가 있어서 gradient based optimization에서는 더이상 사용되지 않는다. graient free method에서 사용되기도 하고, constrained optimization을 이해하는데 도움이 되기 때문에 살펴보자. 일단 constrained optimization …</p>
-          
-          <br>
-          <a href="https://dahjeong.github.io/optimization/penalty/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dahjeong.github.io/optimization/complex-step/" title="Complex Step">Complex Step</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Feb 10, 2022</span>
-    <span class="post_time"> · 1 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Complex%20Step&url=https%3a%2f%2fdahjeong.github.io%2foptimization%2fcomplex-step%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2foptimization%2fcomplex-step%2f&t=Complex%20Step" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dahjeong.github.io/optimization/complex-step/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>Complex step은 수치 미분값을 구하는 방법 중에 하나다. finite differencing을 유도할 때 small step $h$으로 real number가 아니라 imaginary로 취하고 Taylor expansion을 적용하면 아래와 같다. $$f(x+ih) = f(x) + ihf'(x) - \frac{h^2}{2}f''(x)-\frac{ih^3}{3!}f'''(x)+\cdots$$
-여기서 imaginary part만 모아서 보자. $$\text{Imag}[f(x+ih)] = hf'(x) - \frac{h^3}{3!}f'''(x)+\cdots$$ …</p>
-          
-          <br>
-          <a href="https://dahjeong.github.io/optimization/complex-step/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dahjeong.github.io/optimization/finite-differemcing/" title="Finite Differencing">Finite Differencing</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Feb 10, 2022</span>
-    <span class="post_time"> · 2 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Finite%20Differencing&url=https%3a%2f%2fdahjeong.github.io%2foptimization%2ffinite-differemcing%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2foptimization%2ffinite-differemcing%2f&t=Finite%20Differencing" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dahjeong.github.io/optimization/finite-differemcing/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>수치적으로 미분값 구하는 방법은 4가지가 있는데 1) symbolic derivative 2) finite differencing 3)complex step method 4) automatic differenciation 이다. 그 중에서 가장 간단하게 자주 쓰이는 방법이 finite differencing 이다. 먼저 symbolic derivative는 함수의 analytic한 derivative를 찾는 방법이다. 예를 들어서 $f=\sin(x)$의 경우에 symbolic derivative는 $f=\cos(x)$이다. 그런데 이 방법은 implicit …</p>
-          
-          <br>
-          <a href="https://dahjeong.github.io/optimization/finite-differemcing/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dahjeong.github.io/optimization/line-search/" title="Line Search">Line Search</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Feb 10, 2022</span>
-    <span class="post_time"> · 2 min read</span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Line%20Search&url=https%3a%2f%2fdahjeong.github.io%2foptimization%2fline-search%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdahjeong.github.io%2foptimization%2fline-search%2f&t=Line%20Search" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dahjeong.github.io/optimization/line-search/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>$$\underset{x}{\text{minimize}} f(x)$$ 위의 식과 같이 constraint가 없는 최적화 문제에 problem domain이 모든 영역에서 differentiable하면 (미분가능, 이건 연속이랑 다른 개념이라는 걸 고딩 때 배우지) 해당 함수의 gradient, $\nabla f = 0$ 지점이 함수의 극 값, 즉 maximum이나 minimum이 된다. 그래서 최적화 문제 풀 때 $\nabla f(x) = 0$ 의 방정식을 푸는데 (이 방정식을 만족시키는 x를 구한다) 이 과정에서 line search가 나온다.
-수치해석적으로 $x$ …</p>
-          
-          <br>
-          <a href="https://dahjeong.github.io/optimization/line-search/" title="Read More" class="excerpt_more button">Read More</a>
         </div>
       </div>
     </div>
@@ -884,6 +886,11 @@ binary (0 or 1) integer (vehivle의 wheel의 갯수 등을 선택하는 문제) 
           <span class="button_tally">9</span>
         </a>
         
+        <a href='https://dahjeong.github.io/categories/machine-learning/' class="post_tag button button_translucent" title="machine-learning">
+          MACHINE-LEARNING
+          <span class="button_tally">7</span>
+        </a>
+        
         <a href='https://dahjeong.github.io/categories/optimization/' class="post_tag button button_translucent" title="optimization">
           OPTIMIZATION
           <span class="button_tally">4</span>
@@ -926,6 +933,11 @@ binary (0 or 1) integer (vehivle의 wheel의 갯수 등을 선택하는 문제) 
         
         <a href='https://dahjeong.github.io/categories/manga/' class="post_tag button button_translucent" title="manga">
           MANGA
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://dahjeong.github.io/categories/movie/' class="post_tag button button_translucent" title="movie">
+          MOVIE
           <span class="button_tally">1</span>
         </a>
         

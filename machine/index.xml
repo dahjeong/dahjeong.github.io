@@ -5,6 +5,129 @@
     <link>https://dahjeong.github.io/machine/</link>
     <description>Recent content on Dajung&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright><atom:link href="https://dahjeong.github.io/machine/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 20 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dahjeong.github.io/machine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Least squares and linear regression</title>
+      <link>https://dahjeong.github.io/machine/linear-regression/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/machine/linear-regression/</guid>
+      <description>
+        
+          
+            Data의 주요 경향성을 나타내는 equation을 찾을 때
+각각의 데이터와 우리가 가정한 linear equation간의 거리의 제곱을 최소화하는 방법이 가장 일반적인다. 연속함수에서 최소화한다는 것은 derivative = 0 이 되는 값을 찾는 것이다.
+데이터가 $\vec{x} = {x_1, x_2, \dots x_n}$, $\vec{y} = {y_1, y_2, \dots y_n}$ 일 때 Linear regression에서는 이 데이터를 $a \mathbf{x}+b= \mathbf{y}$ 로 근사한다. 그럼 여기서 unknown인 a와 b를 찾아보자.
+${a x_1 + b = y_1&#39;} - y_1$, ${a x_2 + b = y_2&#39;} - y_2$ 이 distance의 합이 최소가 되게 하는 a와 b가 답이된다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Entropy</title>
+      <link>https://dahjeong.github.io/machine/entropy/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/machine/entropy/</guid>
+      <description>
+        
+          
+            엔트로피에 대해서 말하기 전에 surprise에 대해서 먼저 알아야 한다. surprise는 쉽게 말해서 확률의 반대인데, 예를 들어서 동전에 앞면이 나올 확률이 1인 경우에 앞면이 나올 surprise는 0가 된다. (동전 앞면이 나올 확률이 1이라는 것은 언제나 동전 앞면이 나온다는 건데 그럼 동전 앞면이 나왔을 때 놀라는 정도?는 0이라는 의미임) 근데 이 suprise는 something이 아닐 확률과는 다른 개념이므로 1-something 으로 정의되는 것이 아니라 1/(somthing) 으로 정의된다. 그렇지만 여기서도 문제가 발생하는게, $1/1=1$이 되고 $1/0=\infty$ 가 되므로 이렇게 하지 말고 log를 씌워서 아래와 같이 정의한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Expected values</title>
+      <link>https://dahjeong.github.io/machine/expected-values/</link>
+      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/machine/expected-values/</guid>
+      <description>
+        
+          
+            기대값은 사건이 일어나서 얻는 값과 그 사건이 일어날 확률을 곱한것을 모두 합한 값이다. 예를 들어서 StatLand에서 Troll 2에 대해서 들어본 사람 수와 들어보지 못한 사람의 수가 아래의 표와 같다고 생각해 보자.
+Heard of Troll 2 Never heard of Troll 2 Total # 37 176 213 Probability 0.17 0.83 1 Outcome -1 1 이런 상황에서 우리가 지나가는 사람들에게 &amp;quot;troll 2&amp;quot;에 대해서 들어봤는지 아닌지에 대해서 물어보는 betting을 한다고 가정해 보자. &amp;quot;troll 2&amp;quot;에 대해서 들어봤다고 하면 1달러를 내야되고, &amp;quot;troll 2&amp;quot;에 대해서 못들어 봤다고 하는 사람을 만나면 1달러를 얻는다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Bias and variation</title>
+      <link>https://dahjeong.github.io/machine/bias-variance/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/machine/bias-variance/</guid>
+      <description>
+        
+          
+            아래 그림과 같이 하나의 target(빨간 점)을 맞추는 문제를 보자. Bias가 높다는 것은 우리의 prediction이 taget 점과 멀리 떨어져 있다는 것이다. prediction error가 높다는 것 Variance는 taget point에서의 error sum이 낮을 수 있지만 prediction이 정확하지 않은 것이다. 데이터의 noise pattern까지 모델이 다 capture 해 버려서 prediction 결과가 정확해지지 않는 것
+Source: https://www.simplilearn.com/tutorials/machine-learning-tutorial/bias-and-variance
+이 bias와 variance를 낮추기 위해서 regularization, boosting, and bagging 이라는 method를 쓴다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Sensitivity and specificity</title>
+      <link>https://dahjeong.github.io/machine/sensitivity-specificity/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/machine/sensitivity-specificity/</guid>
+      <description>
+        
+          
+            Sensitivity는 actual condition이 positive 인 것이 prediction으로 얼마나 정확히 밝혀졌는지를 말해 준다. 실제로 positive인 사람들 전체 중에 prediction이 positive로 추정한 정도 $$\text{Sensitivity} = \frac{\text{True positives}}{ \text{True positives + False negatives}}$$
+Specificity 는 실제로 negarive인 것이 prediction으로 얼마나 정확히 밝혀졌는지를 말해 준다. 실제로 negative인 사람들 전체 중에 prediction이 negative로 추정한 정도 $$\text{Specificity} = \frac{\text{True negatives}}{ \text{True negatives + False positives}}$$
+요 두 개의 metrics가 confusion matrix 비교하는데 쓰인다. 만약에 prediction이 positive를 알아내는 것이 중요하다면, sensitivity가 높은 machine learning model을 선택하고, negative를 알아내는 것이 더 중요하다면 specificity가 높은 model을 선택한다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Confusion matrix</title>
+      <link>https://dahjeong.github.io/machine/confusion-matrix/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/machine/confusion-matrix/</guid>
+      <description>
+        
+          
+            Confusion matrix은 내가 선택한 machine learning algorithm이 뭘 잘 prediction했고 어떤 걸 잘 prediction하지 못하는지 알려준다. 이 confusion matirix를 비교함으로써 여러 가지 machine learning methods (Logistic regression, Support Vector machine learning, K-nearest, etc.) 중에 어떤 것을 선택하는 것이 가장 좋은 결과를 주는지도 알 수 있다.
+Predicted condition Positive (PP) Negative (PN) Actual condition Positive (P) True positive (TP) False negative (FN) Negative (N) False positive (FP) True negative (TN) 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cross validation</title>
+      <link>https://dahjeong.github.io/machine/cross-validation/</link>
+      <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/machine/cross-validation/</guid>
+      <description>
+        
+          
+            보통 100% 샘플 중에서
+Train (75%) Test (25%) 로 나눠서 사용한다. 근데 여기서 75%와 25%를 나눌때도 총 데이터에서 어떤 부분에서 선택할 것인지도 중요함 데이터를 블록 단위로 나누고 (여기서 예를 들어 A, B, C, D 4개로 나눴다고 하자) 4개 중에서 A를 test data로 선정하고 나머지를 training data로 놓고 machine learning algorithm을 돌린다. 그 다음에는 B를 test data로 선정하고 나머지를 training data로 놓고 다시 알고리즘 돌린다. 이런식으로 반복하는게 cross validation이라고 함 Four fold cross validation sample을 4개의 block을 나눈다.
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
