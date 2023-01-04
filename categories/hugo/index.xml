@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Dajung&#39;s Notes</title>
+    <link>https://dahjeong.github.io/categories/hugo/</link>
+    <description>Recent content in Hugo on Dajung&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dahjeong.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo를 사용해서 Github가 호스팅하는 블로그 만들기</title>
+      <link>https://dahjeong.github.io/etc/blog-posting/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/etc/blog-posting/</guid>
+      <description>
+        
+          
+            일단 시작하기 전에 Windows 환경을 가정합니다. Github 계정이 있어야 한다. Git이 설치되어 있어야 한다. Hugo를 설치해야 한다. Hugo를 설치하는 방법은 다음과 같다. https://github.com/gohugoio/hugo/releases 에 접속하여 아래 스크린샷에 보이는 Assets을 찾는다. 자신의 컴퓨터에 맞는 파일(ex. hugo_0.109.0_windows-arms64.zip)을 다운로드 받고 압축을 푼다. Hugo.exe 파일이 있는 위치를 환경변수 path에 저장한다. 이제 예제 블로그를 복사해 보자!! 일단 https://themes.gohugo.io/ 에서 내가 마음에 드는 Hugo theme을 찾는다.
+마음에 드는 theme page에서 Download 버튼을 누르면 theme이 저장되어 있는 Github로 넘어간다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

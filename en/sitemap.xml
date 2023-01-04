@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dahjeong.github.io/</loc>
-    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -15,6 +15,55 @@
                 hreflang="en"
                 href="https://dahjeong.github.io/"
                 />
+  </url><url>
+    <loc>https://dahjeong.github.io/etc/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/etc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/etc/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/hugo/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/etc/blog-posting/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dahjeong.github.io/categories/misc/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://dahjeong.github.io/kr/categories/misc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dahjeong.github.io/categories/misc/"
+                />
+  </url><url>
+    <loc>https://dahjeong.github.io/etc/root-finding/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dahjeong.github.io/books/</loc>
     <lastmod>2022-08-05T00:00:00+00:00</lastmod>
@@ -28,19 +77,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://dahjeong.github.io/books/"
-                />
-  </url><url>
-    <loc>https://dahjeong.github.io/categories/</loc>
-    <lastmod>2022-08-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://dahjeong.github.io/kr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/categories/"
                 />
   </url><url>
     <loc>https://dahjeong.github.io/categories/essay/</loc>
@@ -604,58 +640,11 @@
                 href="https://dahjeong.github.io/aircraft/engine-design/"
                 />
   </url><url>
-    <loc>https://dahjeong.github.io/etc/</loc>
-    <lastmod>2018-02-15T00:00:00+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://dahjeong.github.io/kr/etc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/etc/"
-                />
-  </url><url>
     <loc>https://dahjeong.github.io/etc/breguet-range-equation/</loc>
-    <lastmod>2018-02-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://dahjeong.github.io/kr/etc/breguet-range-equation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/etc/breguet-range-equation/"
-                />
-  </url><url>
-    <loc>https://dahjeong.github.io/categories/misc/</loc>
-    <lastmod>2018-02-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://dahjeong.github.io/kr/categories/misc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/categories/misc/"
-                />
+    <lastmod>2018-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dahjeong.github.io/etc/ideal-gas-law/</loc>
-    <lastmod>2018-02-10T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://dahjeong.github.io/kr/etc/ideal-gas-law/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dahjeong.github.io/etc/ideal-gas-law/"
-                />
+    <lastmod>2018-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dahjeong.github.io/machine/</loc>
     <priority>0</priority>

@@ -6,11 +6,28 @@
     <description>Recent content in MISC on Dajung&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Dajung Kim; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 15 Feb 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://dahjeong.github.io/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dahjeong.github.io/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Root finding methods (방정식의 근)</title>
+      <link>https://dahjeong.github.io/etc/root-finding/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dahjeong.github.io/etc/root-finding/</guid>
+      <description>
+        
+          
+            구간법 (Braketing method) 연속함수 f(x) 의 값이 구간의 양 끝 $a \leq x \leq b$ 에서 조건 $f(a)f(b)&amp;lt;0$ $[f(a)$의 값과 $f(b)$의 값의 부호가 서로 다르다$]$을 만족하면 구간 내부에 $f(x)=0$을 만족하는 $x$가 적어도 한 개가 존재한다. 이렇게 근이 존재하는 구간을 알 때는 이분법(bisection), 가위치법(False-position method), 수정가위치법(modified false-position method) 과 같은 구간법을 적용해서 방정식의 근(해)를 구할 수 있다.
+Bisection method (이분법) $c = \frac{a+b}{2},\quad a &amp;lt; c &amp;lt; b$ 를 만족하는 $c$ 를 찾는다.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Breguet range equation</title>
       <link>https://dahjeong.github.io/etc/breguet-range-equation/</link>
-      <pubDate>Thu, 15 Feb 2018 00:00:00 +0800</pubDate>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://dahjeong.github.io/etc/breguet-range-equation/</guid>
       <description>
@@ -32,7 +49,7 @@ $$W=L=D \left( \frac{L}{D} \right)=T \left( \frac{L}{D} \right)$$
     <item>
       <title>Ideal Gas law (이상기체법칙)</title>
       <link>https://dahjeong.github.io/etc/ideal-gas-law/</link>
-      <pubDate>Sat, 10 Feb 2018 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 10 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://dahjeong.github.io/etc/ideal-gas-law/</guid>
       <description>
